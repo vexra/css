@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://nextjs.org">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png">
-      <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="128">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vexra/css/main/public/images/logo/computer-science-showdown.png">
+      <img src="https://raw.githubusercontent.com/vexra/css/main/public/images/logo/computer-science-showdown.png" height="128">
     </picture>
     <h1 align="center">Computer Science Showdown</h1>
   </a>
