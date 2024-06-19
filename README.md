@@ -27,7 +27,6 @@ Used for the annual event of the computer science student association at the Uni
 - [React.js](https://reactjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Prisma.io](https://prisma.io)
-- [Shadcn UI](https://ui.shadcn.com/)
 
 ## Getting Started
 
