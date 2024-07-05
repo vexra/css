@@ -4,8 +4,10 @@ export default function MLRegistrationForm() {
   return (
     <form method="post" encType="multipart/form-data">
       {/* Profile Ketua Start */}
-      <div>
-        <h1 className="text-3xl font-semibold text-white">Profil Ketua</h1>
+      <fieldset>
+        <legend className="text-3xl font-semibold text-white">
+          Profil Ketua
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -100,12 +102,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Ketua End */}
 
       {/* Profile Anggota 1 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Anggota 1</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 1
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -203,12 +207,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Anggota 1 End */}
 
       {/* Profile Anggota 2 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Anggota 2</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 2
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -306,12 +312,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Anggota 2 End */}
 
       {/* Profile Anggota 3 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Anggota 3</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 3
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -409,12 +417,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Anggota 3 End */}
 
       {/* Profile Anggota 4 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Anggota 4</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 4
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -512,12 +522,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Anggota 4 End */}
 
       {/* Profile Cadangan 1 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Cadangan 1</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Cadangan 1
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -615,12 +627,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Cadangan 1 End */}
 
       {/* Profile Cadangan 2 Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Cadangan 2</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Cadangan 2
+        </legend>
         <div className="mt-2">
           <label
             className="block font-semibold text-white"
@@ -718,12 +732,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Cadangan 2 End */}
 
       {/* Profile Tim Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Profil Tim</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Tim
+        </legend>
         <div className="mt-2">
           <label className="block font-semibold text-white" htmlFor="email">
             Email
@@ -749,12 +765,14 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Profile Tim End */}
 
       {/* Administarasi Start */}
-      <div className="mt-8">
-        <h1 className="text-3xl font-semibold text-white">Administarasi</h1>
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Administarasi
+        </legend>
         <div className="mt-4">
           <label
             className="block font-semibold text-white"
@@ -771,7 +789,7 @@ export default function MLRegistrationForm() {
             required
           />
         </div>
-      </div>
+      </fieldset>
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
