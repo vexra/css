@@ -51,12 +51,13 @@ model Account {
 }
 
 model LCT {
-  id          String @id @default(cuid())
-  userId      String
-  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email       String
-  institution String
-  teamName    String
+  id           String @id @default(cuid())
+  userId       String
+  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email        String
+  institution  String
+  teamName     String
+  paymentProof String
 
   fullnameLead    String
   phoneLead       String
@@ -78,11 +79,12 @@ model LCT {
 }
 
 model CPC {
-  id          String @id @default(cuid())
-  userId      String
-  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email       String
-  institution String
+  id           String @id @default(cuid())
+  userId       String
+  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email        String
+  institution  String
+  paymentProof String
 
   fullname    String
   phone       String
@@ -91,12 +93,13 @@ model CPC {
 }
 
 model Futsal {
-  id          String @id @default(cuid())
-  userId      String
-  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email       String
-  institution String
-  teamName    String
+  id           String @id @default(cuid())
+  userId       String
+  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email        String
+  institution  String
+  teamName     String
+  paymentProof String
 
   fullnameLead    String
   phoneLead       String
@@ -171,43 +174,58 @@ model Futsal {
 }
 
 model ML {
-  id       String @id @default(cuid())
-  userId   String
-  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email    String
-  teamName String
+  id           String @id @default(cuid())
+  userId       String
+  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email        String
+  teamName     String
+  paymentProof String
 
   fullnameLead    String
+  usernameLead    String
+  userIdLead      String
   phoneLead       String
   birthdateLead   DateTime
   studentCardLead String
 
   fullnameMember1    String
+  usernameMember1    String
+  userIdMember1      String
   phoneMember1       String
   birthdateMember1   DateTime
   studentCardMember1 String
 
   fullnameMember2    String
+  usernameMember2    String
+  userIdMember2      String
   phoneMember2       String
   birthdateMember2   DateTime
   studentCardMember2 String
 
   fullnameMember3    String
+  usernameMember3    String
+  userIdMember3      String
   phoneMember3       String
   birthdateMember3   DateTime
   studentCardMember3 String
 
   fullnameMember4    String
+  usernameMember4    String
+  userIdMember4      String
   phoneMember4       String
   birthdateMember4   DateTime
   studentCardMember4 String
 
   fullnameSubtituteMember1    String
+  usernameSubtituteMember1    String
+  userIdSubtituteMember1      String
   phoneSubtituteMember1       String
   birthdateSubtituteMember1   DateTime
   studentCardSubtituteMember1 String
 
   fullnameSubtituteMember2    String
+  usernameSubtituteMember2    String
+  userIdSubtituteMember2      String
   phoneSubtituteMember2       String
   birthdateSubtituteMember2   DateTime
   studentCardSubtituteMember2 String
