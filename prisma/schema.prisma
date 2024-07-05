@@ -20,6 +20,10 @@ model User {
   image         String?
   role          UserRole  @default(USER)
   accounts      Account[]
+  lcts          LCT[]
+  cpcs          CPC[]
+  futsals       Futsal[]
+  mls           ML[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -47,164 +51,164 @@ model Account {
 }
 
 model LCT {
-  id            String    @id @default(cuid())
-  userId            String
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email String
+  id          String @id @default(cuid())
+  userId      String
+  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email       String
   institution String
-  teamName String
+  teamName    String
 
-  fullnameLead String
-  phoneLead String
-  birthdateLead DateTime
+  fullnameLead    String
+  phoneLead       String
+  birthdateLead   DateTime
   studentCardLead String
 
-  fullnameMember1 String
-  phoneMember1 String
-  birthdateMember1 DateTime
+  fullnameMember1    String
+  phoneMember1       String
+  birthdateMember1   DateTime
   studentCardMember1 String
 
-  fullnameMember2 String
-  phoneMember2 String
-  birthdateMember2 DateTime
+  fullnameMember2    String
+  phoneMember2       String
+  birthdateMember2   DateTime
   studentCardMember2 String
 
   fullnameAssistant String
-  phoneAssistant String
+  phoneAssistant    String
 }
 
 model CPC {
-  id            String    @id @default(cuid())
-  userId            String
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email String
+  id          String @id @default(cuid())
+  userId      String
+  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email       String
   institution String
 
-  fullname String
-  phone String
-  birthdate DateTime
+  fullname    String
+  phone       String
+  birthdate   DateTime
   studentCard String
 }
 
 model Futsal {
-  id            String    @id @default(cuid())
-  userId            String
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email String
+  id          String @id @default(cuid())
+  userId      String
+  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email       String
   institution String
-  teamName String
+  teamName    String
 
-  fullnameLead String
-  phoneLead String
-  birthdateLead DateTime
+  fullnameLead    String
+  phoneLead       String
+  birthdateLead   DateTime
   studentCardLead String
 
-  fullnameMember1 String
-  phoneMember1 String
-  birthdateMember1 DateTime
+  fullnameMember1    String
+  phoneMember1       String
+  birthdateMember1   DateTime
   studentCardMember1 String
 
-  fullnameMember2 String
-  phoneMember2 String
-  birthdateMember2 DateTime
+  fullnameMember2    String
+  phoneMember2       String
+  birthdateMember2   DateTime
   studentCardMember2 String
 
-  fullnameMember3 String
-  phoneMember3 String
-  birthdateMember3 DateTime
+  fullnameMember3    String
+  phoneMember3       String
+  birthdateMember3   DateTime
   studentCardMember3 String
 
-  fullnameMember4 String
-  phoneMember4 String
-  birthdateMember4 DateTime
+  fullnameMember4    String
+  phoneMember4       String
+  birthdateMember4   DateTime
   studentCardMember4 String
 
-  fullnameMember5 String
-  phoneMember5 String
-  birthdateMember5 DateTime
+  fullnameMember5    String
+  phoneMember5       String
+  birthdateMember5   DateTime
   studentCardMember5 String
 
-  fullnameMember6 String
-  phoneMember6 String
-  birthdateMember6 DateTime
+  fullnameMember6    String
+  phoneMember6       String
+  birthdateMember6   DateTime
   studentCardMember6 String
 
-  fullnameMember7 String
-  phoneMember7 String
-  birthdateMember7 DateTime
+  fullnameMember7    String
+  phoneMember7       String
+  birthdateMember7   DateTime
   studentCardMember7 String
 
-  fullnameMember8 String
-  phoneMember8 String
-  birthdateMember8 DateTime
+  fullnameMember8    String
+  phoneMember8       String
+  birthdateMember8   DateTime
   studentCardMember8 String
 
-  fullnameMember9 String
-  phoneMember9 String
-  birthdateMember9 DateTime
+  fullnameMember9    String
+  phoneMember9       String
+  birthdateMember9   DateTime
   studentCardMember9 String
 
-  fullnameMember10 String
-  phoneMember10 String
-  birthdateMember10 DateTime
+  fullnameMember10    String
+  phoneMember10       String
+  birthdateMember10   DateTime
   studentCardMember10 String
 
-  fullnameMember11 String
-  phoneMember11 String
-  birthdateMember11 DateTime
+  fullnameMember11    String
+  phoneMember11       String
+  birthdateMember11   DateTime
   studentCardMember11 String
 
-  fullnameMember12 String
-  phoneMember12 String
-  birthdateMember12 DateTime
+  fullnameMember12    String
+  phoneMember12       String
+  birthdateMember12   DateTime
   studentCardMember12 String
 
   fullnameAssistant1 String
-  phoneAssistant1 String
+  phoneAssistant1    String
 
   fullnameAssistant2 String
-  phoneAssistant2 String
+  phoneAssistant2    String
 }
 
 model ML {
-  id            String    @id @default(cuid())
-  userId            String
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email String
+  id       String @id @default(cuid())
+  userId   String
+  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email    String
   teamName String
 
-  fullnameLead String
-  phoneLead String
-  birthdateLead DateTime
+  fullnameLead    String
+  phoneLead       String
+  birthdateLead   DateTime
   studentCardLead String
 
-  fullnameMember1 String
-  phoneMember1 String
-  birthdateMember1 DateTime
+  fullnameMember1    String
+  phoneMember1       String
+  birthdateMember1   DateTime
   studentCardMember1 String
 
-  fullnameMember2 String
-  phoneMember2 String
-  birthdateMember2 DateTime
+  fullnameMember2    String
+  phoneMember2       String
+  birthdateMember2   DateTime
   studentCardMember2 String
 
-  fullnameMember3 String
-  phoneMember3 String
-  birthdateMember3 DateTime
+  fullnameMember3    String
+  phoneMember3       String
+  birthdateMember3   DateTime
   studentCardMember3 String
 
-  fullnameMember4 String
-  phoneMember4 String
-  birthdateMember4 DateTime
+  fullnameMember4    String
+  phoneMember4       String
+  birthdateMember4   DateTime
   studentCardMember4 String
 
-  fullnameSubtituteMember1 String
-  phoneSubtituteMember1 String
-  birthdateSubtituteMember1 DateTime
+  fullnameSubtituteMember1    String
+  phoneSubtituteMember1       String
+  birthdateSubtituteMember1   DateTime
   studentCardSubtituteMember1 String
 
-  fullnameSubtituteMember2 String
-  phoneSubtituteMember2 String
-  birthdateSubtituteMember2 DateTime
+  fullnameSubtituteMember2    String
+  phoneSubtituteMember2       String
+  birthdateSubtituteMember2   DateTime
   studentCardSubtituteMember2 String
 }
