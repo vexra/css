@@ -87,11 +87,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardLead"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -192,11 +192,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember1"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -297,11 +297,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember2"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -402,11 +402,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember3"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -507,11 +507,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember4"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -612,11 +612,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardSubtituteMember1"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -717,11 +717,11 @@ export default function MLRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardSubtituteMember2"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -793,10 +793,16 @@ export default function MLRegistrationForm() {
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
-        <Link href="" className="w-1/2 rounded-xl bg-red-500 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+        >
           Kembali
         </Link>
-        <Link href="" className="w-1/2 rounded-xl bg-green-400 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+        >
           Daftar
         </Link>
       </div>
