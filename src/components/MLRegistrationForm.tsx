@@ -771,7 +771,7 @@ export default function MLRegistrationForm() {
       {/* Administarasi Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
-          Administarasi
+          Administrasi
         </legend>
         <div className="mt-4">
           <label
