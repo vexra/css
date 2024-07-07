@@ -1,8 +1,68 @@
+'use client'
+
+import registerCpc from '@/actions/cpc'
+import compressImage from '@/lib/compress-image'
 import Link from 'next/link'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
+
+const initialState = {
+  errors: {
+    email: [],
+    fullname: [],
+    phone: [],
+    institution: [],
+    birthdate: [],
+    studentCard: [],
+    paymentProof: [],
+    accountHolderName: [],
+  },
+}
 
 export default function CPCRegistrationForm() {
+  const [state, formAction] = useFormState(registerCpc, initialState)
+  const [compressedFiles, setCompressedFiles] = useState({
+    studentCard: null,
+    paymentProof: null,
+  })
+
+  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, files } = event.target
+    if (files && files.length > 0) {
+      const compressedFile = await compressImage(files[0])
+      setCompressedFiles((prevState) => ({
+        ...prevState,
+        [name]: compressedFile,
+      }))
+    }
+  }
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+
+    // Replace original files with compressed files in formData
+    if (compressedFiles.studentCard) {
+      formData.set(
+        'studentCard',
+        compressedFiles.studentCard,
+        'studentCard.jpg',
+      )
+    }
+    if (compressedFiles.paymentProof) {
+      formData.set(
+        'paymentProof',
+        compressedFiles.paymentProof,
+        'paymentProof.jpg',
+      )
+    }
+
+    // Perform your form submission with formData
+    formAction(formData)
+  }
+
   return (
-    <form method="post" encType="multipart/form-data">
+    <form onSubmit={handleSubmit}>
       {/* Profile */}
       <fieldset>
         <legend className="text-3xl font-semibold text-white">
@@ -20,6 +80,11 @@ export default function CPCRegistrationForm() {
             placeholder="Email kamu"
             required
           />
+          {state?.errors.email?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -34,6 +99,11 @@ export default function CPCRegistrationForm() {
             placeholder="Nama kamu"
             required
           />
+          {state?.errors.fullname?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -48,6 +118,11 @@ export default function CPCRegistrationForm() {
             placeholder="Nomor telepon kamu"
             required
           />
+          {state?.errors.phone?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -65,6 +140,11 @@ export default function CPCRegistrationForm() {
             placeholder="Instansi kamu"
             required
           />
+          {state?.errors.institution?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -78,6 +158,11 @@ export default function CPCRegistrationForm() {
             name="birthdate"
             required
           />
+          {state?.errors.birthdate?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -96,11 +181,15 @@ export default function CPCRegistrationForm() {
             name="studentCard"
             required
           />
+          {state?.errors.studentCard?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
-      {/* Profile End */}
 
-      {/* Administrasi Start */}
+      {/* Administrasi */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
           Administrasi
@@ -118,8 +207,14 @@ export default function CPCRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.paymentProof?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -137,9 +232,13 @@ export default function CPCRegistrationForm() {
             placeholder="Pembayaran atas nama"
             required
           />
+          {state?.errors.accountHolderName?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
-      {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
         <Link
@@ -148,13 +247,22 @@ export default function CPCRegistrationForm() {
         >
           Kembali
         </Link>
-        <Link
-          href=""
-          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
-        >
-          Daftar
-        </Link>
+        <SubmitButton />
       </div>
     </form>
+  )
+}
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+    >
+      Daftar
+    </button>
   )
 }
