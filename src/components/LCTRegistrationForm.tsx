@@ -1,8 +1,94 @@
+'use client'
+
+import registerLct from '@/actions/lct'
+import compressImage from '@/lib/compress-image'
 import Link from 'next/link'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
+
+const initialState = {
+  errors: {
+    fullnameLead: [],
+    phoneLead: [],
+    birthdateLead: [],
+    studentCardLead: [],
+    fullnameMember1: [],
+    phoneMember1: [],
+    birthdateMember1: [],
+    studentCardMember1: [],
+    fullnameMember2: [],
+    phoneMember2: [],
+    birthdateMember2: [],
+    studentCardMember2: [],
+    fullnameAssistant: [],
+    phoneAssistant: [],
+    email: [],
+    teamName: [],
+    paymentProof: [],
+    accountHolderName: [],
+  },
+}
 
 export default function LCTRegistrationForm() {
+  const [state, formAction] = useFormState(registerLct, initialState)
+  const [compressedFiles, setCompressedFiles] = useState({
+    studentCardLead: null,
+    studentCardMember1: null,
+    studentCardMember2: null,
+    paymentProof: null,
+  })
+
+  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, files } = event.target
+    if (files && files.length > 0) {
+      const compressedFile = await compressImage(files[0])
+      setCompressedFiles((prevState) => ({
+        ...prevState,
+        [name]: compressedFile,
+      }))
+    }
+  }
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+
+    // Replace original files with compressed files in formData
+    if (compressedFiles.studentCardLead) {
+      formData.set(
+        'studentCardLead',
+        compressedFiles.studentCardLead,
+        'studentCardLead.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember1) {
+      formData.set(
+        'studentCardMember1',
+        compressedFiles.studentCardMember1,
+        'studentCardMember1.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember2) {
+      formData.set(
+        'studentCardMember2',
+        compressedFiles.studentCardMember2,
+        'studentCardMember2.jpg',
+      )
+    }
+    if (compressedFiles.paymentProof) {
+      formData.set(
+        'paymentProof',
+        compressedFiles.paymentProof,
+        'paymentProof.jpg',
+      )
+    }
+
+    // Perform your form submission with formData
+    formAction(formData)
+  }
+
   return (
-    <form method="post" encType="multipart/form-data">
+    <form onSubmit={handleSubmit}>
       {/* Profile Ketua Start */}
       <fieldset>
         <legend className="text-3xl font-semibold text-white">
@@ -23,6 +109,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nama ketua"
             required
           />
+          {state?.errors.fullnameLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -37,6 +128,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nomor telepon ketua"
             required
           />
+          {state?.errors.phoneLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -53,6 +149,11 @@ export default function LCTRegistrationForm() {
             name="birthdateLead"
             required
           />
+          {state?.errors.birthdateLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -71,6 +172,11 @@ export default function LCTRegistrationForm() {
             name="studentCardLead"
             required
           />
+          {state?.errors.studentCardLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Ketua End */}
@@ -95,6 +201,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nama anggota 1"
             required
           />
+          {state?.errors.fullnameMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -112,6 +223,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nomor telepon anggota 1"
             required
           />
+          {state?.errors.phoneMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -128,6 +244,11 @@ export default function LCTRegistrationForm() {
             name="birthdateMember1"
             required
           />
+          {state?.errors.birthdateMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -146,6 +267,11 @@ export default function LCTRegistrationForm() {
             name="studentCardMember1"
             required
           />
+          {state?.errors.studentCardMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 1 End */}
@@ -170,6 +296,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nama anggota 2"
             required
           />
+          {state?.errors.fullnameMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -187,6 +318,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nomor telepon anggota 2"
             required
           />
+          {state?.errors.phoneMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -203,6 +339,11 @@ export default function LCTRegistrationForm() {
             name="birthdateMember2"
             required
           />
+          {state?.errors.birthdateMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -221,6 +362,11 @@ export default function LCTRegistrationForm() {
             name="studentCardMember2"
             required
           />
+          {state?.errors.studentCardMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 2 End */}
@@ -245,6 +391,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nama pendamping"
             required
           />
+          {state?.errors.fullnameAssistant?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -262,6 +413,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nomor telepon pendamping"
             required
           />
+          {state?.errors.phoneAssistant?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Pendamping End */}
@@ -283,6 +439,33 @@ export default function LCTRegistrationForm() {
             placeholder="Email tim"
             required
           />
+          {state?.errors.email?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="institution"
+          >
+            Instansi
+          </label>
+          <input
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            id="institution"
+            type="text"
+            name="institution"
+            placeholder="Instansi tim"
+            required
+          />
+          {state?.errors.institution?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -297,6 +480,11 @@ export default function LCTRegistrationForm() {
             placeholder="Nama tim"
             required
           />
+          {state?.errors.teamName?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Tim End */}
@@ -321,6 +509,11 @@ export default function LCTRegistrationForm() {
             name="paymentProof"
             required
           />
+          {state?.errors.paymentProof?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -338,24 +531,38 @@ export default function LCTRegistrationForm() {
             placeholder="Pembayaran atas nama"
             required
           />
+          {state?.errors.accountHolderName?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
         <Link
-          href=""
+          href="/"
           className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
         >
           Kembali
         </Link>
-        <Link
-          href=""
-          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
-        >
-          Daftar
-        </Link>
+        <SubmitButton />
       </div>
     </form>
   )
+
+  function SubmitButton() {
+    const { pending } = useFormStatus()
+
+    return (
+      <button
+        type="submit"
+        disabled={pending}
+        className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+      >
+        Daftar
+      </button>
+    )
+  }
 }
