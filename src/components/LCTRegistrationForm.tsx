@@ -16,7 +16,7 @@ export default function LCTRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameLead"
             type="text"
             name="fullnameLead"
@@ -30,7 +30,7 @@ export default function LCTRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneLead"
             type="text"
             name="phoneLead"
@@ -57,11 +57,11 @@ export default function LCTRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardLead"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -88,7 +88,7 @@ export default function LCTRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
@@ -105,7 +105,7 @@ export default function LCTRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember1"
             type="text"
             name="phoneMember1"
@@ -132,11 +132,11 @@ export default function LCTRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember1"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -163,7 +163,7 @@ export default function LCTRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
@@ -180,7 +180,7 @@ export default function LCTRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember2"
             type="text"
             name="phoneMember2"
@@ -207,11 +207,11 @@ export default function LCTRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember2"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -238,7 +238,7 @@ export default function LCTRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameAssistant"
             type="text"
             name="fullnameAssistant"
@@ -255,7 +255,7 @@ export default function LCTRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneAssistant"
             type="text"
             name="phoneAssistant"
@@ -276,7 +276,7 @@ export default function LCTRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="email"
             type="email"
             name="email"
@@ -290,7 +290,7 @@ export default function LCTRegistrationForm() {
             Nama Tim
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="teamName"
             type="text"
             name="teamName"
@@ -331,7 +331,7 @@ export default function LCTRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
@@ -343,10 +343,16 @@ export default function LCTRegistrationForm() {
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
-        <Link href="" className="w-1/2 rounded-xl bg-red-500 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+        >
           Kembali
         </Link>
-        <Link href="" className="w-1/2 rounded-xl bg-green-400 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+        >
           Daftar
         </Link>
       </div>
