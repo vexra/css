@@ -803,7 +803,6 @@ export default function FutsalRegistrationForm() {
       </fieldset>
       {/* Profile Anggota 10 End */}
 
-
       {/* Profile Pendamping 1 Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
@@ -918,7 +917,7 @@ export default function FutsalRegistrationForm() {
       {/* Administarasi Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
-          Administarasi
+          Administrasi
         </legend>
         <div className="mt-4">
           <label
@@ -933,6 +932,23 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            required
+          />
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="accountHolderName"
+          >
+            Atas Nama
+          </label>
+          <input
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            id="accountHolderName"
+            type="file"
+            accept="image/*"
+            name="accountHolderName"
             required
           />
         </div>
