@@ -51,13 +51,14 @@ model Account {
 }
 
 model LCT {
-  id           String @id @default(cuid())
-  userId       String
-  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email        String
-  institution  String
-  teamName     String
-  paymentProof String
+  id                String @id @default(cuid())
+  userId            String
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email             String
+  institution       String
+  teamName          String
+  paymentProof      String
+  accountHolderName String
 
   fullnameLead    String
   phoneLead       String
@@ -79,12 +80,13 @@ model LCT {
 }
 
 model CPC {
-  id           String @id @default(cuid())
-  userId       String
-  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email        String
-  institution  String
-  paymentProof String
+  id                String @id @default(cuid())
+  userId            String
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email             String
+  institution       String
+  paymentProof      String
+  accountHolderName String
 
   fullname    String
   phone       String
@@ -93,13 +95,14 @@ model CPC {
 }
 
 model Futsal {
-  id           String @id @default(cuid())
-  userId       String
-  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email        String
-  institution  String
-  teamName     String
-  paymentProof String
+  id                String @id @default(cuid())
+  userId            String
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email             String
+  institution       String
+  teamName          String
+  paymentProof      String
+  accountHolderName String
 
   fullnameLead    String
   phoneLead       String
@@ -174,12 +177,13 @@ model Futsal {
 }
 
 model ML {
-  id           String @id @default(cuid())
-  userId       String
-  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  email        String
-  teamName     String
-  paymentProof String
+  id                String @id @default(cuid())
+  userId            String
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email             String
+  teamName          String
+  paymentProof      String
+  accountHolderName String
 
   fullnameLead    String
   usernameLead    String
