@@ -71,10 +71,10 @@ export default async function registerLct(prevState: any, formData: FormData) {
   )
 
   const result = await Promise.all([
-    paymentProofBlobPromise,
     studentCardLeadBlobPromise,
     studentCardMember1BlobPromise,
     studentCardMember2BlobPromise,
+    paymentProofBlobPromise,
   ])
 
   const lct = await db.lct.create({
@@ -83,21 +83,21 @@ export default async function registerLct(prevState: any, formData: FormData) {
       fullnameLead,
       phoneLead,
       birthdateLead,
-      studentCardLead: result[1].downloadUrl,
+      studentCardLead: result[0].downloadUrl,
       fullnameMember1,
       phoneMember1,
       birthdateMember1,
-      studentCardMember1: result[2].downloadUrl,
+      studentCardMember1: result[1].downloadUrl,
       fullnameMember2,
       phoneMember2,
       birthdateMember2,
-      studentCardMember2: result[3].downloadUrl,
+      studentCardMember2: result[2].downloadUrl,
       fullnameAssistant,
       phoneAssistant,
       email,
       institution,
       teamName,
-      paymentProof: result[0].downloadUrl,
+      paymentProof: result[3].downloadUrl,
       accountHolderName,
     },
   })
