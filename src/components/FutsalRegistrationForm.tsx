@@ -16,7 +16,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameLead"
             type="text"
             name="fullnameLead"
@@ -30,7 +30,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneLead"
             type="text"
             name="phoneLead"
@@ -57,11 +57,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardLead"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -88,7 +88,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
@@ -105,7 +105,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember1"
             type="text"
             name="phoneMember1"
@@ -132,11 +132,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember1"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -163,7 +163,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
@@ -180,7 +180,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember2"
             type="text"
             name="phoneMember2"
@@ -207,11 +207,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember2"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -238,7 +238,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember3"
             type="text"
             name="fullnameMember3"
@@ -255,7 +255,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember3"
             type="text"
             name="phoneMember3"
@@ -282,11 +282,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember3"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -313,7 +313,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember4"
             type="text"
             name="fullnameMember4"
@@ -330,7 +330,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember4"
             type="text"
             name="phoneMember4"
@@ -357,11 +357,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember4"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -388,7 +388,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember5"
             type="text"
             name="fullnameMember5"
@@ -405,7 +405,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember5"
             type="text"
             name="phoneMember5"
@@ -432,11 +432,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember5"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -463,7 +463,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember6"
             type="text"
             name="fullnameMember6"
@@ -480,7 +480,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember6"
             type="text"
             name="phoneMember6"
@@ -507,11 +507,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember6"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -538,7 +538,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember7"
             type="text"
             name="fullnameMember7"
@@ -555,7 +555,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember7"
             type="text"
             name="phoneMember7"
@@ -582,11 +582,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember7"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -613,7 +613,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember8"
             type="text"
             name="fullnameMember8"
@@ -630,7 +630,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember8"
             type="text"
             name="phoneMember8"
@@ -657,11 +657,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember8"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -688,7 +688,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember9"
             type="text"
             name="fullnameMember9"
@@ -705,7 +705,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember9"
             type="text"
             name="phoneMember9"
@@ -732,11 +732,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember9"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -763,7 +763,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameMember10"
             type="text"
             name="fullnameMember10"
@@ -780,7 +780,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneMember10"
             type="text"
             name="phoneMember10"
@@ -807,11 +807,11 @@ export default function FutsalRegistrationForm() {
 
         <div className="mt-4">
           <label
-            className="block font-semibold text-white"
+            className="flex flex-row items-center gap-2 font-semibold text-white"
             htmlFor="studentCardMember10"
           >
             Kartu Pelajar
-            <span className="font-normal text-slate-300">Max 1 Mb</span>
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
@@ -838,7 +838,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameAssistant1"
             type="text"
             name="fullnameAssistant1"
@@ -855,7 +855,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneAssistant1"
             type="text"
             name="phoneAssistant1"
@@ -879,7 +879,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullnameAssistant2"
             type="text"
             name="fullnameAssistant2"
@@ -896,7 +896,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phoneAssistant2"
             type="text"
             name="phoneAssistant2"
@@ -917,7 +917,7 @@ export default function FutsalRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="email"
             type="email"
             name="email"
@@ -931,7 +931,7 @@ export default function FutsalRegistrationForm() {
             Nama Tim
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="teamName"
             type="text"
             name="teamName"
@@ -972,7 +972,7 @@ export default function FutsalRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
@@ -984,10 +984,16 @@ export default function FutsalRegistrationForm() {
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
-        <Link href="" className="w-1/2 rounded-xl bg-red-500 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+        >
           Kembali
         </Link>
-        <Link href="" className="w-1/2 rounded-xl bg-green-400 py-4 font-bold">
+        <Link
+          href=""
+          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+        >
           Daftar
         </Link>
       </div>
