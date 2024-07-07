@@ -20,6 +20,7 @@ export default function MLRegistrationForm() {
             id="fullnameLead"
             type="text"
             name="fullnameLead"
+            placeholder="Nama ketua"
             required
           />
         </div>
@@ -36,6 +37,7 @@ export default function MLRegistrationForm() {
             id="usernameLead"
             type="text"
             name="usernameLead"
+            placeholder="Username ketua"
             required
           />
         </div>
@@ -52,6 +54,7 @@ export default function MLRegistrationForm() {
             id="userIdLead"
             type="text"
             name="userIdLead"
+            placeholder="User id ketua"
             required
           />
         </div>
@@ -65,6 +68,7 @@ export default function MLRegistrationForm() {
             id="phoneLead"
             type="text"
             name="phoneLead"
+            placeholder="Nomor telepon ketua"
             required
           />
         </div>
@@ -122,6 +126,7 @@ export default function MLRegistrationForm() {
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
+            placeholder="Nama anggota 1"
             required
           />
         </div>
@@ -138,6 +143,7 @@ export default function MLRegistrationForm() {
             id="usernameMember1"
             type="text"
             name="usernameMember1"
+            placeholder="Username anggota 1"
             required
           />
         </div>
@@ -154,6 +160,7 @@ export default function MLRegistrationForm() {
             id="userIdMember1"
             type="text"
             name="userIdMember1"
+            placeholder="User id anggota 1"
             required
           />
         </div>
@@ -170,6 +177,7 @@ export default function MLRegistrationForm() {
             id="phoneMember1"
             type="text"
             name="phoneMember1"
+            placeholder="Nomor telepon anggota 1"
             required
           />
         </div>
@@ -227,6 +235,7 @@ export default function MLRegistrationForm() {
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
+            placeholder="Nama anggota 2"
             required
           />
         </div>
@@ -243,6 +252,7 @@ export default function MLRegistrationForm() {
             id="usernameMember2"
             type="text"
             name="usernameMember2"
+            placeholder="Username anggota 2"
             required
           />
         </div>
@@ -259,6 +269,7 @@ export default function MLRegistrationForm() {
             id="userIdMember2"
             type="text"
             name="userIdMember2"
+            placeholder="User id anggota 2"
             required
           />
         </div>
@@ -275,6 +286,7 @@ export default function MLRegistrationForm() {
             id="phoneMember2"
             type="text"
             name="phoneMember2"
+            placeholder="Nomor telepon anggota 2"
             required
           />
         </div>
@@ -332,6 +344,7 @@ export default function MLRegistrationForm() {
             id="fullnameMember3"
             type="text"
             name="fullnameMember3"
+            placeholder="Nama anggota 3"
             required
           />
         </div>
@@ -348,6 +361,7 @@ export default function MLRegistrationForm() {
             id="usernameMember3"
             type="text"
             name="usernameMember3"
+            placeholder="Username anggota 3"
             required
           />
         </div>
@@ -364,6 +378,7 @@ export default function MLRegistrationForm() {
             id="userIdMember3"
             type="text"
             name="userIdMember3"
+            placeholder="User id anggota 3"
             required
           />
         </div>
@@ -380,6 +395,7 @@ export default function MLRegistrationForm() {
             id="phoneMember3"
             type="text"
             name="phoneMember3"
+            placeholder="Nomor telepon anggota 3"
             required
           />
         </div>
@@ -437,6 +453,7 @@ export default function MLRegistrationForm() {
             id="fullnameMember4"
             type="text"
             name="fullnameMember4"
+            placeholder="Nama anggota 4"
             required
           />
         </div>
@@ -453,6 +470,7 @@ export default function MLRegistrationForm() {
             id="usernameMember4"
             type="text"
             name="usernameMember4"
+            placeholder="Username anggota 4"
             required
           />
         </div>
@@ -469,6 +487,7 @@ export default function MLRegistrationForm() {
             id="userIdMember4"
             type="text"
             name="userIdMember4"
+            placeholder="User id anggota 4"
             required
           />
         </div>
@@ -485,6 +504,7 @@ export default function MLRegistrationForm() {
             id="phoneMember4"
             type="text"
             name="phoneMember4"
+            placeholder="Nomor telepon anggota 4"
             required
           />
         </div>
@@ -542,6 +562,7 @@ export default function MLRegistrationForm() {
             id="fullnameSubtituteMember1"
             type="text"
             name="fullnameSubtituteMember1"
+            placeholder="Nama cadangan 1"
             required
           />
         </div>
@@ -558,6 +579,7 @@ export default function MLRegistrationForm() {
             id="usernameSubtituteMember1"
             type="text"
             name="usernameSubtituteMember1"
+            placeholder="Username cadangan 1"
             required
           />
         </div>
@@ -574,6 +596,7 @@ export default function MLRegistrationForm() {
             id="userIdSubtituteMember1"
             type="text"
             name="userIdSubtituteMember1"
+            placeholder="User id cadangan 1"
             required
           />
         </div>
@@ -590,6 +613,7 @@ export default function MLRegistrationForm() {
             id="phoneSubtituteMember1"
             type="text"
             name="phoneSubtituteMember1"
+            placeholder="Nomor telepon cadangan 1"
             required
           />
         </div>
@@ -647,6 +671,7 @@ export default function MLRegistrationForm() {
             id="fullnameSubtituteMember2"
             type="text"
             name="fullnameSubtituteMember2"
+            placeholder="Nama cadangan 2"
             required
           />
         </div>
@@ -663,6 +688,7 @@ export default function MLRegistrationForm() {
             id="usernameSubtituteMember2"
             type="text"
             name="usernameSubtituteMember2"
+            placeholder="Username cadangan 2"
             required
           />
         </div>
@@ -679,6 +705,7 @@ export default function MLRegistrationForm() {
             id="userIdSubtituteMember2"
             type="text"
             name="userIdSubtituteMember2"
+            placeholder="User id cadangan 2"
             required
           />
         </div>
@@ -695,6 +722,7 @@ export default function MLRegistrationForm() {
             id="phoneSubtituteMember2"
             type="text"
             name="phoneSubtituteMember2"
+            placeholder="Nomor telepon cadangan 2"
             required
           />
         </div>
@@ -749,6 +777,7 @@ export default function MLRegistrationForm() {
             id="email"
             type="email"
             name="email"
+            placeholder="Email tim"
             required
           />
         </div>
@@ -762,6 +791,7 @@ export default function MLRegistrationForm() {
             id="teamName"
             type="text"
             name="teamName"
+            placeholder="Nama tim"
             required
           />
         </div>
@@ -802,6 +832,7 @@ export default function MLRegistrationForm() {
             id="accountHolderName"
             type="text"
             name="accountHolderName"
+            placeholder="Pembayaran atas nama"
             required
           />
         </div>
