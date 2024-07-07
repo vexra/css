@@ -20,6 +20,7 @@ export default function LCTRegistrationForm() {
             id="fullnameLead"
             type="text"
             name="fullnameLead"
+            placeholder="Nama ketua"
             required
           />
         </div>
@@ -33,6 +34,7 @@ export default function LCTRegistrationForm() {
             id="phoneLead"
             type="text"
             name="phoneLead"
+            placeholder="Nomor telepon ketua"
             required
           />
         </div>
@@ -90,6 +92,7 @@ export default function LCTRegistrationForm() {
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
+            placeholder="Nama anggota 1"
             required
           />
         </div>
@@ -106,6 +109,7 @@ export default function LCTRegistrationForm() {
             id="phoneMember1"
             type="text"
             name="phoneMember1"
+            placeholder="Nomor telepon anggota 1"
             required
           />
         </div>
@@ -163,6 +167,7 @@ export default function LCTRegistrationForm() {
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
+            placeholder="Nama anggota 2"
             required
           />
         </div>
@@ -179,6 +184,7 @@ export default function LCTRegistrationForm() {
             id="phoneMember2"
             type="text"
             name="phoneMember2"
+            placeholder="Nomor telepon anggota 2"
             required
           />
         </div>
@@ -236,6 +242,7 @@ export default function LCTRegistrationForm() {
             id="fullnameAssistant"
             type="text"
             name="fullnameAssistant"
+            placeholder="Nama pendamping"
             required
           />
         </div>
@@ -252,6 +259,7 @@ export default function LCTRegistrationForm() {
             id="phoneAssistant"
             type="text"
             name="phoneAssistant"
+            placeholder="Nomor telepon pendamping"
             required
           />
         </div>
@@ -272,6 +280,7 @@ export default function LCTRegistrationForm() {
             id="email"
             type="email"
             name="email"
+            placeholder="Email tim"
             required
           />
         </div>
@@ -285,6 +294,7 @@ export default function LCTRegistrationForm() {
             id="teamName"
             type="text"
             name="teamName"
+            placeholder="Nama tim"
             required
           />
         </div>
@@ -325,6 +335,7 @@ export default function LCTRegistrationForm() {
             id="accountHolderName"
             type="text"
             name="accountHolderName"
+            placeholder="Pembayaran atas nama"
             required
           />
         </div>
