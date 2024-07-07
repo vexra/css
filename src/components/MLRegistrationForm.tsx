@@ -768,7 +768,7 @@ export default function MLRegistrationForm() {
       </fieldset>
       {/* Profile Tim End */}
 
-      {/* Administarasi Start */}
+      {/* Administrasi Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
           Administrasi
@@ -786,6 +786,22 @@ export default function MLRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            required
+          />
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="accountHolderName"
+          >
+            Atas Nama
+          </label>
+          <input
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            id="accountHolderName"
+            type="text"
+            name="accountHolderName"
             required
           />
         </div>
