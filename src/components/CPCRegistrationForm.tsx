@@ -76,7 +76,6 @@ export default function CPCRegistrationForm() {
             id="birthdate"
             type="date"
             name="birthdate"
-            placeholder="Tanggal lahir kamu"
             required
           />
         </div>
