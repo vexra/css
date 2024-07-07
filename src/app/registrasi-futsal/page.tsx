@@ -1,7 +1,7 @@
 import FutsalRegistrationForm from '@/components/FutsalRegistrationForm'
 import Image from 'next/image'
 
-export default function RegistrasiML() {
+export default function RegistrasiFutsal() {
   return (
     <main className="bg-gradient-three-colors font-sans">
       <div className="flex justify-center">
