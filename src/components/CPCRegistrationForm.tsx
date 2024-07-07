@@ -17,6 +17,7 @@ export default function CPCRegistrationForm() {
             id="email"
             type="email"
             name="email"
+            placeholder="Email kamu"
             required
           />
         </div>
@@ -30,6 +31,7 @@ export default function CPCRegistrationForm() {
             id="fullname"
             type="text"
             name="fullname"
+            placeholder="Nama kamu"
             required
           />
         </div>
@@ -43,6 +45,7 @@ export default function CPCRegistrationForm() {
             id="phone"
             type="text"
             name="phone"
+            placeholder="Nomor telepon kamu"
             required
           />
         </div>
@@ -59,6 +62,7 @@ export default function CPCRegistrationForm() {
             id="institution"
             type="text"
             name="institution"
+            placeholder="Instansi kamu"
             required
           />
         </div>
@@ -72,6 +76,7 @@ export default function CPCRegistrationForm() {
             id="birthdate"
             type="date"
             name="birthdate"
+            placeholder="Tanggal lahir kamu"
             required
           />
         </div>
@@ -130,6 +135,7 @@ export default function CPCRegistrationForm() {
             id="accountHolderName"
             type="text"
             name="accountHolderName"
+            placeholder="Pembayaran atas nama"
             required
           />
         </div>
