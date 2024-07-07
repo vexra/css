@@ -20,6 +20,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameLead"
             type="text"
             name="fullnameLead"
+            placeholder="Nama ketua"
             required
           />
         </div>
@@ -33,6 +34,7 @@ export default function FutsalRegistrationForm() {
             id="phoneLead"
             type="text"
             name="phoneLead"
+            placeholder="Nomor telepon ketua"
             required
           />
         </div>
@@ -90,6 +92,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
+            placeholder="Nama anggota 1"
             required
           />
         </div>
@@ -106,6 +109,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember1"
             type="text"
             name="phoneMember1"
+            placeholder="Nomor telepon anggota 1"
             required
           />
         </div>
@@ -163,6 +167,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
+            placeholder="Nama anggota 2"
             required
           />
         </div>
@@ -179,6 +184,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember2"
             type="text"
             name="phoneMember2"
+            placeholder="Nomor telepon anggota 2"
             required
           />
         </div>
@@ -236,6 +242,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember3"
             type="text"
             name="fullnameMember3"
+            placeholder="Nama anggota 3"
             required
           />
         </div>
@@ -252,6 +259,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember3"
             type="text"
             name="phoneMember3"
+            placeholder="Nomor telepon anggota 3"
             required
           />
         </div>
@@ -309,6 +317,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember4"
             type="text"
             name="fullnameMember4"
+            placeholder="Nama anggota 4"
             required
           />
         </div>
@@ -325,6 +334,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember4"
             type="text"
             name="phoneMember4"
+            placeholder="Nomor telepon anggota 4"
             required
           />
         </div>
@@ -382,6 +392,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember5"
             type="text"
             name="fullnameMember5"
+            placeholder="Nama anggota 5"
             required
           />
         </div>
@@ -398,6 +409,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember5"
             type="text"
             name="phoneMember5"
+            placeholder="Nomor telepon anggota 5"
             required
           />
         </div>
@@ -455,6 +467,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember6"
             type="text"
             name="fullnameMember6"
+            placeholder="Nama anggota 6"
             required
           />
         </div>
@@ -471,6 +484,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember6"
             type="text"
             name="phoneMember6"
+            placeholder="Nomor telepon anggota 6"
             required
           />
         </div>
@@ -528,6 +542,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember7"
             type="text"
             name="fullnameMember7"
+            placeholder="Nama anggota 7"
             required
           />
         </div>
@@ -544,6 +559,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember7"
             type="text"
             name="phoneMember7"
+            placeholder="Nomor telepon anggota 7"
             required
           />
         </div>
@@ -601,6 +617,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember8"
             type="text"
             name="fullnameMember8"
+            placeholder="Nama anggota 8"
             required
           />
         </div>
@@ -617,6 +634,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember8"
             type="text"
             name="phoneMember8"
+            placeholder="Nomor telepon anggota 8"
             required
           />
         </div>
@@ -674,6 +692,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember9"
             type="text"
             name="fullnameMember9"
+            placeholder="Nama anggota 9"
             required
           />
         </div>
@@ -690,6 +709,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember9"
             type="text"
             name="phoneMember9"
+            placeholder="Nomor telepon anggota 9"
             required
           />
         </div>
@@ -747,6 +767,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameMember10"
             type="text"
             name="fullnameMember10"
+            placeholder="Nama anggota 10"
             required
           />
         </div>
@@ -763,6 +784,7 @@ export default function FutsalRegistrationForm() {
             id="phoneMember10"
             type="text"
             name="phoneMember10"
+            placeholder="Nomor telepon anggota 10"
             required
           />
         </div>
@@ -820,6 +842,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameAssistant1"
             type="text"
             name="fullnameAssistant1"
+            placeholder="Nama pendamping 1"
             required
           />
         </div>
@@ -836,6 +859,7 @@ export default function FutsalRegistrationForm() {
             id="phoneAssistant1"
             type="text"
             name="phoneAssistant1"
+            placeholder="Nomor telepon pendamping 1"
             required
           />
         </div>
@@ -859,6 +883,7 @@ export default function FutsalRegistrationForm() {
             id="fullnameAssistant2"
             type="text"
             name="fullnameAssistant2"
+            placeholder="Nama pendamping 2"
             required
           />
         </div>
@@ -875,6 +900,7 @@ export default function FutsalRegistrationForm() {
             id="phoneAssistant2"
             type="text"
             name="phoneAssistant2"
+            placeholder="Nomor telepon pendamping 2"
             required
           />
         </div>
@@ -895,6 +921,7 @@ export default function FutsalRegistrationForm() {
             id="email"
             type="email"
             name="email"
+            placeholder="Email tim"
             required
           />
         </div>
@@ -908,6 +935,7 @@ export default function FutsalRegistrationForm() {
             id="teamName"
             type="text"
             name="teamName"
+            placeholder="Nama tim"
             required
           />
         </div>
@@ -948,6 +976,7 @@ export default function FutsalRegistrationForm() {
             id="accountHolderName"
             type="text"
             name="accountHolderName"
+            placeholder="Pembayaran atas nama"
             required
           />
         </div>
