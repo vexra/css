@@ -9,10 +9,7 @@ export default function CPCRegistrationForm() {
           Profil Peserta
         </legend>
         <div className="mt-2">
-          <label
-            className="block font-semibold text-white"
-            htmlFor="email"
-          >
+          <label className="block font-semibold text-white" htmlFor="email">
             Email
           </label>
           <input
@@ -38,10 +35,7 @@ export default function CPCRegistrationForm() {
         </div>
 
         <div className="mt-4">
-          <label
-            className="block font-semibold text-white"
-            htmlFor="phone"
-          >
+          <label className="block font-semibold text-white" htmlFor="phone">
             No. Telpon
           </label>
           <input
@@ -70,10 +64,7 @@ export default function CPCRegistrationForm() {
         </div>
 
         <div className="mt-4">
-          <label
-            className="block font-semibold text-white"
-            htmlFor="birthdate"
-          >
+          <label className="block font-semibold text-white" htmlFor="birthdate">
             Tanggal Lahir
           </label>
           <input
@@ -90,7 +81,7 @@ export default function CPCRegistrationForm() {
             className="block font-semibold text-white"
             htmlFor="studentCard"
           >
-           Upload Kartu Identitas Diri
+            Upload Kartu Identitas Diri
             <span className="font-normal text-slate-300">Max 1 Mb</span>
           </label>
           <input
@@ -105,10 +96,10 @@ export default function CPCRegistrationForm() {
       </fieldset>
       {/* Profile End */}
 
-      {/* Administarasi Start */}
+      {/* Administrasi Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
-          Administarasi
+          Administrasi
         </legend>
         <div className="mt-4">
           <label
@@ -123,6 +114,22 @@ export default function CPCRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            required
+          />
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="accountHolderName"
+          >
+            Atas Nama
+          </label>
+          <input
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            id="accountHolderName"
+            type="text"
+            name="accountHolderName"
             required
           />
         </div>
