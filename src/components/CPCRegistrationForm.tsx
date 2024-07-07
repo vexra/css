@@ -13,7 +13,7 @@ export default function CPCRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="email"
             type="email"
             name="email"
@@ -27,7 +27,7 @@ export default function CPCRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="fullname"
             type="text"
             name="fullname"
@@ -41,7 +41,7 @@ export default function CPCRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="phone"
             type="text"
             name="phone"
@@ -58,7 +58,7 @@ export default function CPCRegistrationForm() {
             Instansi
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="institution"
             type="text"
             name="institution"
@@ -130,7 +130,7 @@ export default function CPCRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
