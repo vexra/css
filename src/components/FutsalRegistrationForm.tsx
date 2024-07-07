@@ -946,8 +946,7 @@ export default function FutsalRegistrationForm() {
           <input
             className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
             id="accountHolderName"
-            type="file"
-            accept="image/*"
+            type="text"
             name="accountHolderName"
             required
           />
