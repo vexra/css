@@ -1,8 +1,217 @@
+'use client'
+
+import registerFutsal from '@/actions/futsal'
+import compressImage from '@/lib/compress-image'
 import Link from 'next/link'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
+
+const initialState = {
+  errors: {
+    fullnameLead: [],
+    phoneLead: [],
+    birthdateLead: [],
+    studentCardLead: [],
+    fullnameMember1: [],
+    phoneMember1: [],
+    birthdateMember1: [],
+    studentCardMember1: [],
+    fullnameMember2: [],
+    phoneMember2: [],
+    birthdateMember2: [],
+    studentCardMember2: [],
+    fullnameMember3: [],
+    phoneMember3: [],
+    birthdateMember3: [],
+    studentCardMember3: [],
+    fullnameMember4: [],
+    phoneMember4: [],
+    birthdateMember4: [],
+    studentCardMember4: [],
+    fullnameMember5: [],
+    phoneMember5: [],
+    birthdateMember5: [],
+    studentCardMember5: [],
+    fullnameMember6: [],
+    phoneMember6: [],
+    birthdateMember6: [],
+    studentCardMember6: [],
+    fullnameMember7: [],
+    phoneMember7: [],
+    birthdateMember7: [],
+    studentCardMember7: [],
+    fullnameMember8: [],
+    phoneMember8: [],
+    birthdateMember8: [],
+    studentCardMember8: [],
+    fullnameMember9: [],
+    phoneMember9: [],
+    birthdateMember9: [],
+    studentCardMember9: [],
+    fullnameMember10: [],
+    phoneMember10: [],
+    birthdateMember10: [],
+    studentCardMember10: [],
+    fullnameMember11: [],
+    phoneMember11: [],
+    birthdateMember11: [],
+    studentCardMember11: [],
+    fullnameMember12: [],
+    phoneMember12: [],
+    birthdateMember12: [],
+    studentCardMember12: [],
+    fullnameAssistant1: [],
+    phoneAssistant1: [],
+    fullnameAssistant2: [],
+    phoneAssistant2: [],
+    email: [],
+    institution: [],
+    teamName: [],
+    paymentProof: [],
+    accountHolderName: [],
+  },
+}
 
 export default function FutsalRegistrationForm() {
+  const [state, formAction] = useFormState(registerFutsal, initialState)
+  const [compressedFiles, setCompressedFiles] = useState({
+    studentCardLead: null,
+    studentCardMember1: null,
+    studentCardMember2: null,
+    studentCardMember3: null,
+    studentCardMember4: null,
+    studentCardMember5: null,
+    studentCardMember6: null,
+    studentCardMember7: null,
+    studentCardMember8: null,
+    studentCardMember9: null,
+    studentCardMember10: null,
+    studentCardMember11: null,
+    studentCardMember12: null,
+    paymentProof: null,
+  })
+
+  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, files } = event.target
+    if (files && files.length > 0) {
+      const compressedFile = await compressImage(files[0])
+      setCompressedFiles((prevState) => ({
+        ...prevState,
+        [name]: compressedFile,
+      }))
+    }
+  }
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+
+    // Replace original files with compressed files in formData
+    if (compressedFiles.studentCardLead) {
+      formData.set(
+        'studentCardLead',
+        compressedFiles.studentCardLead,
+        'studentCardLead.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember1) {
+      formData.set(
+        'studentCardMember1',
+        compressedFiles.studentCardMember1,
+        'studentCardMember1.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember2) {
+      formData.set(
+        'studentCardMember2',
+        compressedFiles.studentCardMember2,
+        'studentCardMember2.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember3) {
+      formData.set(
+        'studentCardMember3',
+        compressedFiles.studentCardMember3,
+        'studentCardMember3.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember4) {
+      formData.set(
+        'studentCardMember4',
+        compressedFiles.studentCardMember4,
+        'studentCardMember4.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember5) {
+      formData.set(
+        'studentCardMember5',
+        compressedFiles.studentCardMember5,
+        'studentCardMember5.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember6) {
+      formData.set(
+        'studentCardMember6',
+        compressedFiles.studentCardMember6,
+        'studentCardMember6.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember7) {
+      formData.set(
+        'studentCardMember7',
+        compressedFiles.studentCardMember7,
+        'studentCardMember7.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember8) {
+      formData.set(
+        'studentCardMember8',
+        compressedFiles.studentCardMember8,
+        'studentCardMember8.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember9) {
+      formData.set(
+        'studentCardMember9',
+        compressedFiles.studentCardMember9,
+        'studentCardMember9.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember10) {
+      formData.set(
+        'studentCardMember10',
+        compressedFiles.studentCardMember10,
+        'studentCardMember10.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember11) {
+      formData.set(
+        'studentCardMember11',
+        compressedFiles.studentCardMember11,
+        'studentCardMember11.jpg',
+      )
+    }
+    if (compressedFiles.studentCardMember12) {
+      formData.set(
+        'studentCardMember12',
+        compressedFiles.studentCardMember12,
+        'studentCardMember12.jpg',
+      )
+    }
+    if (compressedFiles.paymentProof) {
+      formData.set(
+        'paymentProof',
+        compressedFiles.paymentProof,
+        'paymentProof.jpg',
+      )
+    }
+
+    // Perform your form submission with formData
+    formAction(formData)
+  }
+
   return (
-    <form method="post" encType="multipart/form-data">
+    <form onSubmit={handleSubmit}>
       {/* Profile Ketua Start */}
       <fieldset>
         <legend className="text-3xl font-semibold text-white">
@@ -23,6 +232,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama ketua"
             required
           />
+          {state?.errors.fullnameLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -37,6 +251,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon ketua"
             required
           />
+          {state?.errors.phoneLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -53,6 +272,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateLead"
             required
           />
+          {state?.errors.birthdateLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -69,8 +293,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardLead"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardLead?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Ketua End */}
@@ -95,6 +325,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 1"
             required
           />
+          {state?.errors.fullnameMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -112,6 +347,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 1"
             required
           />
+          {state?.errors.phoneMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -128,6 +368,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember1"
             required
           />
+          {state?.errors.birthdateMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -144,8 +389,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember1"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 1 End */}
@@ -170,6 +421,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 2"
             required
           />
+          {state?.errors.fullnameMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -187,6 +443,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 2"
             required
           />
+          {state?.errors.phoneMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -203,6 +464,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember2"
             required
           />
+          {state?.errors.birthdateMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -219,8 +485,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember2"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 2 End */}
@@ -245,6 +517,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 3"
             required
           />
+          {state?.errors.fullnameMember3?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -262,6 +539,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 3"
             required
           />
+          {state?.errors.phoneMember3?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -278,6 +560,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember3"
             required
           />
+          {state?.errors.birthdateMember3?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -294,8 +581,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember3"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember3?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 3 End */}
@@ -320,6 +613,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 4"
             required
           />
+          {state?.errors.fullnameMember4?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -337,6 +635,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 4"
             required
           />
+          {state?.errors.phoneMember4?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -353,6 +656,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember4"
             required
           />
+          {state?.errors.birthdateMember4?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -369,8 +677,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember4"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember4?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 4 End */}
@@ -395,6 +709,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 5"
             required
           />
+          {state?.errors.fullnameMember5?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -412,6 +731,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 5"
             required
           />
+          {state?.errors.phoneMember5?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -428,6 +752,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember5"
             required
           />
+          {state?.errors.birthdateMember5?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -444,8 +773,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember5"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember5?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 5 End */}
@@ -470,6 +805,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 6"
             required
           />
+          {state?.errors.fullnameMember6?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -487,6 +827,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 6"
             required
           />
+          {state?.errors.phoneMember6?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -503,6 +848,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember6"
             required
           />
+          {state?.errors.birthdateMember6?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -519,8 +869,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember6"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember6?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 6 End */}
@@ -545,6 +901,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 7"
             required
           />
+          {state?.errors.fullnameMember7?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -562,6 +923,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 7"
             required
           />
+          {state?.errors.phoneMember7?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -578,6 +944,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember7"
             required
           />
+          {state?.errors.birthdateMember7?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -594,8 +965,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember7"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember7?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 7 End */}
@@ -620,6 +997,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 8"
             required
           />
+          {state?.errors.fullnameMember8?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -637,6 +1019,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 8"
             required
           />
+          {state?.errors.phoneMember8?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -653,6 +1040,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember8"
             required
           />
+          {state?.errors.birthdateMember8?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -669,8 +1061,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember8"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember8?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 8 End */}
@@ -695,6 +1093,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 9"
             required
           />
+          {state?.errors.fullnameMember9?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -712,6 +1115,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 9"
             required
           />
+          {state?.errors.phoneMember9?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -728,6 +1136,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember9"
             required
           />
+          {state?.errors.birthdateMember9?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -744,8 +1157,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember9"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember9?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 9 End */}
@@ -770,6 +1189,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama anggota 10"
             required
           />
+          {state?.errors.fullnameMember10?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -787,6 +1211,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon anggota 10"
             required
           />
+          {state?.errors.phoneMember10?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -803,6 +1232,11 @@ export default function FutsalRegistrationForm() {
             name="birthdateMember10"
             required
           />
+          {state?.errors.birthdateMember10?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -819,8 +1253,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember10"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.studentCardMember10?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Anggota 10 End */}
@@ -845,6 +1285,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama pendamping 1"
             required
           />
+          {state?.errors.fullnameAssistant1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -862,6 +1307,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon pendamping 1"
             required
           />
+          {state?.errors.phoneAssistant1?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Pendamping 1 End */}
@@ -886,6 +1336,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama pendamping 2"
             required
           />
+          {state?.errors.fullnameAssistant2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -903,6 +1358,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nomor telepon pendamping 2"
             required
           />
+          {state?.errors.phoneAssistant2?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Pendamping 2 End */}
@@ -924,6 +1384,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Email tim"
             required
           />
+          {state?.errors.email?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -938,6 +1403,11 @@ export default function FutsalRegistrationForm() {
             placeholder="Nama tim"
             required
           />
+          {state?.errors.teamName?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Profile Tim End */}
@@ -960,8 +1430,14 @@ export default function FutsalRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            onChange={handleFileChange}
             required
           />
+          {state?.errors.paymentProof?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
 
         <div className="mt-4">
@@ -979,24 +1455,38 @@ export default function FutsalRegistrationForm() {
             placeholder="Pembayaran atas nama"
             required
           />
+          {state?.errors.accountHolderName?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
         </div>
       </fieldset>
       {/* Administrasi End */}
 
       <div className="mt-8 flex gap-2 text-white">
         <Link
-          href=""
+          href="/"
           className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
         >
           Kembali
         </Link>
-        <Link
-          href=""
-          className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
-        >
-          Daftar
-        </Link>
+        <SubmitButton />
       </div>
     </form>
   )
+
+  function SubmitButton() {
+    const { pending } = useFormStatus()
+
+    return (
+      <button
+        type="submit"
+        disabled={pending}
+        className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+      >
+        Daftar
+      </button>
+    )
+  }
 }
