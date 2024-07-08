@@ -69,7 +69,8 @@ export default async function Layout({
               <Link href="/pengumuman-lomba">Pengumuman Lomba</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              {role === 'ADMIN' && <Link href="/admin">Administrasi</Link>}
+              {role === 'USER' && <Link href="/dashboard">Administrasi</Link>}
             </li>
           </ul>
         </section>
