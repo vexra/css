@@ -1,13 +1,16 @@
 import Footer from '@/components/public/footer'
 import Navbar from '@/components/public/navbar'
-import Navlink from '@/components/public/navlink'
+import { currentRole } from '@/lib/auth'
+import Link from 'next/link'
 import { FaX } from 'react-icons/fa6'
 
-export default function Layout({
+export default async function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const role = await currentRole()
+
   return (
     <div className="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -15,24 +18,60 @@ export default function Layout({
         {/* Navbar */}
         <Navbar />
         {/* Page content here */}
-        <div className="bg-zinc-100 dark:bg-zinc-900">{children}</div>
+        <div>{children}</div>
         <Footer />
       </div>
       <div className="drawer-side z-10">
-        <section className="flex h-full w-screen flex-col gap-4 bg-zinc-50 p-4 dark:bg-zinc-950">
+        <section className="flex h-full w-screen flex-col gap-4 bg-base-100 px-4 py-6">
           {/* Sidebar content here */}
           <div className="flex self-end">
-            <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
-              <span className="sr-only">Close main menu</span>
-              <FaX className="inline-block h-8 w-8 stroke-current font-bold" />
+            <label
+              htmlFor="my-drawer-3"
+              aria-label="close sidebar"
+              className="btn btn-square btn-ghost"
+            >
+              <FaX className="h-6 w-6" />
             </label>
           </div>
 
-          <Navlink href="/about" text="About" />
-          <Navlink href="/lomba" text="Lomba" />
-          <Navlink href="/bazar" text="Bazar" />
-          <Navlink href="/pengumuman-lomba" text="Pengumuman Lomba" />
-          <Navlink href="/administrasi" text="Administrasi" />
+          <ul className="flex flex-col gap-4 text-center">
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <div className="dropdown dropdown-bottom">
+                <div tabIndex={0} role="button">
+                  Lomba
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
+                >
+                  <li>
+                    <Link href="/lct">LCT</Link>
+                  </li>
+                  <li>
+                    <Link href="/cpc">CPC</Link>
+                  </li>
+                  <li>
+                    <Link href="/futsal">Futsal</Link>
+                  </li>
+                  <li>
+                    <Link href="/ml">ML</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <Link href="/bazar">Bazar</Link>
+            </li>
+            <li>
+              <Link href="/pengumuman-lomba">Pengumuman Lomba</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+          </ul>
         </section>
       </div>
     </div>

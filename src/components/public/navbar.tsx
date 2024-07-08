@@ -1,6 +1,7 @@
 import login from '@/actions/login'
 import logout from '@/actions/logout'
 import { currentUser } from '@/lib/auth'
+import { UserRole } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa6'
@@ -9,7 +10,7 @@ export default async function Navbar() {
   const user = await currentUser()
 
   return (
-    <div className="navbar w-full justify-between px-2 lg:px-4">
+    <div className="navbar w-full justify-between px-4 py-4 lg:px-8">
       <div className="navbar-start">
         <Link href="/">
           <Image
@@ -21,18 +22,18 @@ export default async function Navbar() {
           />
         </Link>
 
-        <ul className="menu menu-horizontal hidden lg:block">
+        <ul className="menu menu-horizontal hidden lg:flex">
           <li>
             <Link href="/about">About</Link>
           </li>
           <li>
-            <div className="dropdown dropdown-bottom">
+            <div className="dropdown dropdown-bottom dropdown-hover">
               <div tabIndex={0} role="button">
                 Lomba
               </div>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
+                className="menu dropdown-content z-[1] w-52 rounded-box p-2 shadow"
               >
                 <li>
                   <Link href="/lct">LCT</Link>
@@ -50,13 +51,18 @@ export default async function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="/">Bazar</Link>
+            <Link href="/bazar">Bazar</Link>
           </li>
           <li>
-            <Link href="/">Pengumuman Lomba</Link>
+            <Link href="/pengumuman-lomba">Pengumuman Lomba</Link>
           </li>
           <li>
-            <Link href="/">Administrasi</Link>
+            {user?.role === UserRole.ADMIN && (
+              <Link href="/admin">Administrasi</Link>
+            )}
+            {user?.role === UserRole.USER && (
+              <Link href="/dashboard">Administrasi</Link>
+            )}
           </li>
         </ul>
       </div>
