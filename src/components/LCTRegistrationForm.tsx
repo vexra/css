@@ -170,6 +170,7 @@ export default function LCTRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardLead"
+            onChange={handleFileChange}
             required
           />
           {state?.errors.studentCardLead?.map((error) => (
@@ -265,6 +266,7 @@ export default function LCTRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember1"
+            onChange={handleFileChange}
             required
           />
           {state?.errors.studentCardMember1?.map((error) => (
@@ -360,6 +362,7 @@ export default function LCTRegistrationForm() {
             type="file"
             accept="image/*"
             name="studentCardMember2"
+            onChange={handleFileChange}
             required
           />
           {state?.errors.studentCardMember2?.map((error) => (
@@ -507,6 +510,7 @@ export default function LCTRegistrationForm() {
             type="file"
             accept="image/*"
             name="paymentProof"
+            onChange={handleFileChange}
             required
           />
           {state?.errors.paymentProof?.map((error) => (
