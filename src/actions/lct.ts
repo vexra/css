@@ -42,10 +42,6 @@ export default async function registerLct(prevState: any, formData: FormData) {
     accountHolderName,
   } = validatedFields.data
 
-  const paymentProofBlobPromise = put(paymentProof.name, paymentProof, {
-    access: 'public',
-  })
-
   const studentCardLeadBlobPromise = put(
     studentCardLead.name,
     studentCardLead,
@@ -69,6 +65,10 @@ export default async function registerLct(prevState: any, formData: FormData) {
       access: 'public',
     },
   )
+
+  const paymentProofBlobPromise = put(paymentProof.name, paymentProof, {
+    access: 'public',
+  })
 
   const result = await Promise.all([
     studentCardLeadBlobPromise,

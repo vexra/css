@@ -31,30 +31,30 @@ export default async function registerCpc(prevState: any, formData: FormData) {
     studentCard,
   } = validatedFields.data
 
-  const paymentProofBlobPromise = put(paymentProof.name, paymentProof, {
-    access: 'public',
-  })
-
   const studentCardBlobPromise = put(studentCard.name, studentCard, {
     access: 'public',
   })
 
+  const paymentProofBlobPromise = put(paymentProof.name, paymentProof, {
+    access: 'public',
+  })
+
   const result = await Promise.all([
-    paymentProofBlobPromise,
     studentCardBlobPromise,
+    paymentProofBlobPromise,
   ])
 
   const cpc = await db.cpc.create({
     data: {
       userId: user.id!,
-      accountHolderName,
-      birthdate,
-      email,
       fullname,
-      institution,
-      paymentProof: result[0].downloadUrl,
       phone,
-      studentCard: result[1].downloadUrl,
+      birthdate,
+      studentCard: result[0].downloadUrl,
+      email,
+      institution,
+      paymentProof: result[1].downloadUrl,
+      accountHolderName,
     },
   })
 }
