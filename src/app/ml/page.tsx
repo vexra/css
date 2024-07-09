@@ -1,12 +1,12 @@
 export default function Ml() {
   return (
-    <main className="p-4 md:container md:px-20">
-      <h1 className="text-heading bg-gradient-heading mt-10 bg-clip-text text-center font-bold text-transparent">
+    <main className="p-4 md:px-20">
+      <h1 className="bg-gradient-heading mt-10 bg-clip-text py-2 text-center text-5xl font-bold text-transparent">
         Mobile Legends
       </h1>
 
       <section className="mt-10">
-        <h2 className="text-primary text-4xl font-bold">Deskripsi Lomba</h2>
+        <h2 className="text-4xl font-bold text-[#132D46]">Deskripsi Lomba</h2>
 
         <p className="mt-2 text-base text-slate-600">
           CSS (Computer Science Showdown) 2024 merupakan ajang kompetisi di
@@ -17,7 +17,7 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-primary text-4xl font-bold">Ketentuan Umum</h2>
+        <h2 className="text-4xl font-bold text-[#132D46]">Ketentuan Umum</h2>
 
         <p className="mt-2 text-base text-slate-600">
           Ketentuan umum merupakan ketentuan yang berlaku untuk kategori
@@ -60,7 +60,7 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-primary text-4xl font-bold">Penghargaan</h2>
+        <h2 className="text-4xl font-bold text-[#132D46]">Penghargaan</h2>
         <p className="mt-2 text-base text-slate-600">
           Penghargaan bagi para pemenang Mobile Legend
         </p>
@@ -81,7 +81,7 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-primary text-4xl font-bold">Pendaftaran</h2>
+        <h2 className="text-4xl font-bold text-[#132D46]">Pendaftaran</h2>
 
         <p className="mt-2 text-base text-slate-600">Timeline Mobile Legends</p>
 
@@ -138,7 +138,7 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-primary text-4xl font-bold">Contact Person</h2>
+        <h2 className="text-4xl font-bold text-[#132D46]">Contact Person</h2>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
           <li className="mt-2 text-base text-slate-600">
