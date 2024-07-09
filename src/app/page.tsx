@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Ml() {
   return (
     <main className="p-4 md:px-20 dark:bg-black">
@@ -28,7 +30,7 @@ export default function Ml() {
           perlombaan Mobile Legends
         </p>
 
-        <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-violet-500">
+        <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Peserta wajib menaati setiap peraturan yang ada.
           </li>
@@ -71,7 +73,7 @@ export default function Ml() {
           Penghargaan bagi para pemenang Mobile Legend
         </p>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Juara 1 : Uang Tunai senilai Rp. 700.000 + e-sertifikat
           </li>
@@ -95,7 +97,7 @@ export default function Ml() {
           Timeline Mobile Legends
         </p>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Gelombang I : 9 - 22 September 2024
           </li>
@@ -125,7 +127,7 @@ export default function Ml() {
           Biaya pendaftaran Mobile Legend sebesar
         </p>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Gelombang I : Rp. 40.000 per Tim/Slot
           </li>
@@ -140,7 +142,7 @@ export default function Ml() {
           transfer melalui :
         </p>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Dana: 082289046489 a.n. Anindya Salsabila
           </li>
@@ -152,7 +154,7 @@ export default function Ml() {
           Contact Person
         </h2>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-violet-500">
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
             Firman Situmorang : +62 813-1991-2461
           </li>
@@ -161,6 +163,13 @@ export default function Ml() {
           </li>
         </ul>
       </section>
+
+      <Link
+        href="/registrasi-ml"
+        className="bg-gradient-heading mx-auto mt-10 block w-fit rounded-lg px-6 py-4 text-4xl font-semibold text-zinc-50 sm:px-8 md:px-16"
+      >
+        Daftar Sekarang
+      </Link>
     </main>
   )
 }
