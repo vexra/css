@@ -6,7 +6,13 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      backgroundImage: {
+        'gradient-heading': 'linear-gradient(to right, #7209B7, #3A0CA3)',
+      },
+    },
+  },
   plugins: [require('daisyui')],
 }
 export default config
