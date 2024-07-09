@@ -11,3 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .bg-gradient-css {
+    @apply bg-gradient-to-r from-[#F72585] to-[#7209B7];
+  }
+}
