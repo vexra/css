@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </section>
 
-        <section className="text-zinc-50 text-center lg:text-left">
+        <section className="text-center text-zinc-50 lg:text-left">
           <h2 className="font-extrabold uppercase">KONTAK</h2>
 
           <div className="mt-4 flex flex-col gap-2">

@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Futsal() {
   return (
     <main className="p-4 sm:p-6 md:px-20 md:py-8 dark:bg-black">
-      <h1 className="bg-gradient-heading mt-10 bg-clip-text py-2 text-center text-5xl font-bold text-transparent">
+      <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-center text-5xl font-bold text-transparent">
         Futsal
       </h1>
 
@@ -160,7 +160,7 @@ export default function Futsal() {
 
       <Link
         href="/registrasi-futsal"
-        className="bg-gradient-heading mx-auto mt-10 block w-fit rounded-lg px-6 py-4 text-2xl font-semibold text-zinc-50 sm:px-8 md:px-16 md:text-4xl"
+        className="mx-auto mt-10 block w-fit rounded-lg bg-gradient-heading px-6 py-4 text-2xl font-semibold text-zinc-50 sm:px-8 md:px-16 md:text-4xl"
       >
         Daftar Sekarang
       </Link>
