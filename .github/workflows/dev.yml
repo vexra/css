@@ -33,6 +33,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
       - name: Format Code Base
-        run: pnpm run format
+        run: pnpm run format:check
       - name: Lint Code Base
         run: pnpm run lint
