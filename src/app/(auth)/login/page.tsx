@@ -6,12 +6,12 @@ import { MdArrowBack } from 'react-icons/md'
 
 export default function Login() {
   return (
-    <main className="bg-gradient-css min-h-screen p-8">
+    <main className="bg-gradient-css flex min-h-screen flex-col p-8">
       <Link href="/">
         <MdArrowBack className="text-3xl text-zinc-50" />
       </Link>
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="my-auto flex flex-col items-center justify-center self-center">
         <h1 className="text-2xl font-bold text-zinc-50 lg:text-4xl">
           Selamat Datang di CSS
         </h1>
