@@ -6,14 +6,13 @@ import {
   FaInstagram,
   FaLocationDot,
   FaTiktok,
-  FaTwitter,
   FaXTwitter,
   FaYoutube,
 } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-css p-4 lg:px-16 lg:py-8">
+    <footer className="bg-gradient-css px-4 py-8 lg:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <section>
           <div className="flex items-center gap-8">
@@ -32,12 +31,12 @@ export default function Footer() {
             />
           </div>
 
-          <div className="mt-2 w-min">
+          <div className="mt-2 w-full lg:w-60">
             <p className="text-base font-normal text-zinc-50">
               Himpunan Mahasiswa Jurusan Ilmu Komputer
             </p>
 
-            <section className="mt-4 flex items-center gap-7">
+            <section className="mt-6 flex items-center gap-7">
               <Link
                 href="https://www.instagram.com/himakomunila"
                 target="_blank"
@@ -86,12 +85,14 @@ export default function Footer() {
           </div>
         </section>
 
-        <section className="text-center text-zinc-50 lg:text-left">
-          <h2 className="font-extrabold uppercase">KONTAK</h2>
+        <section className="mt-12 text-zinc-50 lg:mt-0">
+          <h2 className="text-center font-extrabold uppercase lg:text-start">
+            KONTAK
+          </h2>
 
-          <div className="mt-4 flex flex-col gap-2">
-            <address className="not-italic">
-              Jl. Prof.Dr. Ir. SumatriBrojonegoro No.1 Gedong Meneng, Kec.
+          <div className="mt-6 flex w-full flex-col items-center gap-4 lg:items-start">
+            <address className="text-center not-italic lg:text-start">
+              Jl. Prof.Dr. Ir. Sumatri Brojonegoro No.1 Gedong Meneng, Kec.
               Rajabasa, Kota Bandar Lampung, Indonesia
             </address>
 
@@ -113,10 +114,10 @@ export default function Footer() {
         </section>
       </div>
 
-      <p className="mt-12 text-center text-zinc-50">
+      <p className="mt-12 text-center text-sm text-zinc-50">
         &copy; {new Date().getFullYear()}{' '}
         <Link
-          href="https://prave.com"
+          href="https://cs-showdown.vercel.app"
           className="font-bold hover:underline"
           target="_blank"
           rel="noopener noreferrer"

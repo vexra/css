@@ -1,4 +1,3 @@
-import login from '@/actions/login'
 import logout from '@/actions/logout'
 import { currentUser } from '@/lib/auth'
 import { UserRole } from '@prisma/client'
@@ -11,7 +10,7 @@ export default async function Navbar() {
 
   return (
     <header className="bg-gradient-css navbar w-full justify-between px-4 py-4 lg:px-8">
-      <div className="navbar-start">
+      <div>
         <Link href="/">
           <Image
             src="/images/logo/computer-science-showdown.png"
@@ -39,7 +38,7 @@ export default async function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content z-[1] w-52 rounded-box p-2 shadow"
+                className="menu dropdown-content z-[1] w-52 rounded-box bg-zinc-50 bg-opacity-5 p-2 shadow backdrop-blur-md"
               >
                 <li>
                   <Link
@@ -116,23 +115,19 @@ export default async function Navbar() {
             <form action={logout}>
               <button
                 type="submit"
-                className="h-8 w-12 rounded-lg bg-purple-900 text-center"
+                className="rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
               >
                 Keluar
               </button>
             </form>
           </>
         ) : (
-          <>
-            <form action={login}>
-              <button
-                type="submit"
-                className="h-10 w-20 rounded-lg bg-[#3A0CA3] text-center text-sm font-bold text-zinc-50"
-              >
-                Masuk
-              </button>
-            </form>
-          </>
+          <Link
+            href="/login"
+            className="rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
+          >
+            Masuk
+          </Link>
         )}
       </div>
 
