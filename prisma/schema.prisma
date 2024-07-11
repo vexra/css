@@ -77,6 +77,9 @@ model Lct {
 
   fullnameAssistant String
   phoneAssistant    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Cpc {
@@ -92,6 +95,9 @@ model Cpc {
   phone       String
   birthdate   DateTime
   studentCard String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Futsal {
@@ -174,6 +180,9 @@ model Futsal {
 
   fullnameAssistant2 String
   phoneAssistant2    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Ml {
@@ -233,4 +242,7 @@ model Ml {
   phoneSubtituteMember2       String
   birthdateSubtituteMember2   DateTime
   studentCardSubtituteMember2 String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
