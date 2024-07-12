@@ -59,7 +59,7 @@ model Lct {
   teamName          String
   paymentProof      String
   accountHolderName String
-  status            Boolean @default(false)
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   phoneLead       String
@@ -91,7 +91,7 @@ model Cpc {
   institution       String
   paymentProof      String
   accountHolderName String
-  status            Boolean @default(false)
+  isVerified        Boolean @default(false)
 
   fullname    String
   phone       String
@@ -111,7 +111,7 @@ model Futsal {
   teamName          String
   paymentProof      String
   accountHolderName String
-  status            Boolean @default(false)
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   phoneLead       String
@@ -196,7 +196,7 @@ model Ml {
   teamName          String
   paymentProof      String
   accountHolderName String
-  status            Boolean @default(false)
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   usernameLead    String
