@@ -51,14 +51,15 @@ model Account {
 }
 
 model Lct {
-  id                String @id @default(cuid())
+  id                String  @id @default(cuid())
   userId            String
-  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   email             String
   institution       String
   teamName          String
   paymentProof      String
   accountHolderName String
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   phoneLead       String
@@ -83,13 +84,14 @@ model Lct {
 }
 
 model Cpc {
-  id                String @id @default(cuid())
+  id                String  @id @default(cuid())
   userId            String
-  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   email             String
   institution       String
   paymentProof      String
   accountHolderName String
+  isVerified        Boolean @default(false)
 
   fullname    String
   phone       String
@@ -101,14 +103,15 @@ model Cpc {
 }
 
 model Futsal {
-  id                String @id @default(cuid())
+  id                String  @id @default(cuid())
   userId            String
-  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   email             String
   institution       String
   teamName          String
   paymentProof      String
   accountHolderName String
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   phoneLead       String
@@ -186,13 +189,14 @@ model Futsal {
 }
 
 model Ml {
-  id                String @id @default(cuid())
+  id                String  @id @default(cuid())
   userId            String
-  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   email             String
   teamName          String
   paymentProof      String
   accountHolderName String
+  isVerified        Boolean @default(false)
 
   fullnameLead    String
   usernameLead    String
