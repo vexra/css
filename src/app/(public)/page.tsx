@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main className="dark:bg-black">
-      <div className="h-screen bg-gradient-heading">
+      <div className="bg-gradient-three-colors h-screen">
         <div className="xs:px-10 p-4 sm:px-20 md:flex md:flex-row-reverse md:pt-32">
           <div className="flex justify-center md:w-1/2 md:items-center md:justify-end xl:pr-24">
             <Image
@@ -31,9 +31,12 @@ export default function Home() {
               Dare to Dream Strive for Greatness
             </h1>
             <div className="flex justify-center md:justify-start">
-              <button className="shadow-custom mt-5 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white hover:bg-violet-600 hover:delay-300 lg:mt-10">
+              <Link
+                href="#about"
+                className="shadow-custom mt-5 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white hover:bg-violet-600 hover:delay-300 lg:mt-10"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,13 +88,16 @@ export default function Home() {
         </section>
 
         <div className="mt-10 px-8">
-          <div className="reveal mt-10 font-semibold lg:opacity-0">
-            <h4 className="text-center text-2xl text-[#7209B7]">About Us</h4>
+          <section
+            className="reveal mt-10 font-semibold lg:opacity-0"
+            id="about"
+          >
+            <h2 className="text-center text-2xl text-[#7209B7]">About Us</h2>
             <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
-            <h2 className="mt-5 text-2xl text-[#7209B7] dark:text-white">
+            <h3 className="mt-5 text-2xl text-[#7209B7] dark:text-white">
               Apa Itu Computer Science Showdown?
-            </h2>
+            </h3>
 
             <p className="mt-2 text-base text-slate-600 dark:text-slate-400">
               Dalam rangka Dies Natalis Jurusan, kami ingin mengadakan
@@ -111,7 +117,7 @@ export default function Home() {
               dan terus memberikan manfaat bagi civitas akademik Jurusan Ilmu
               Komputer khususnya dan civitas FMIPA Universitas Lampung.
             </p>
-          </div>
+          </section>
 
           <div className="reveal mt-10 font-semibold">
             <div className="md:mt-16 md:flex">
