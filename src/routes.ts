@@ -2,7 +2,14 @@
  * An array of routes that are accessible to the public
  * These routes do not require authentication
  */
-export const publicRoutes = ['/', '/cpc', '/futsal', '/lct', '/ml']
+export const publicRoutes = [
+  '/',
+  '/cpc',
+  '/futsal',
+  '/lct',
+  '/ml',
+  '/pengumuman-lomba',
+]
 
 /**
  * An array of routes that are used for authentication
