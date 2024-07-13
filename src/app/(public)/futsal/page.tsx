@@ -8,9 +8,7 @@ export default function Futsal() {
       </h1>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">
-          Deskripsi Lomba
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Deskripsi Lomba</h2>
 
         <p className="mt-2 text-base text-zinc-200">
           Lomba Futsal adalah permainan bola yang dimainkan oleh dua regu, yang
@@ -22,9 +20,7 @@ export default function Futsal() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">
-          Ketentuan Umum
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Ketentuan Umum</h2>
 
         <p className="mt-2 text-base text-zinc-200">
           Ketentuan umum merupakan ketentuan yang berlaku untuk kategori
@@ -57,9 +53,7 @@ export default function Futsal() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">
-          Penghargaan
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Penghargaan</h2>
         <p className="mt-2 text-base text-zinc-200">
           Penghargaan bagi para pemenang Futsal
         </p>
@@ -91,13 +85,9 @@ export default function Futsal() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">
-          Pendaftaran
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Pendaftaran</h2>
 
-        <p className="mt-2 text-base text-zinc-200">
-          Timeline Futsal
-        </p>
+        <p className="mt-2 text-base text-zinc-200">Timeline Futsal</p>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
@@ -144,9 +134,7 @@ export default function Futsal() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">
-          Contact Person
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
