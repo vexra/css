@@ -2,17 +2,15 @@ import Link from 'next/link'
 
 export default function Ml() {
   return (
-    <main className="p-4 sm:p-6 md:px-20 md:py-8 dark:bg-black">
-      <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-center text-5xl font-bold text-transparent">
+    <main className="bg-gradient-css p-4 sm:p-6 md:px-20 md:py-8">
+      <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-center text-5xl font-bold text-transparent text-zinc-50">
         Mobile Legends
       </h1>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-[#132D46] dark:text-slate-300">
-          Deskripsi Lomba
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Deskripsi Lomba</h2>
 
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-400">
+        <p className="mt-2 text-base text-zinc-200">
           CSS (Computer Science Showdown) 2024 merupakan ajang kompetisi di
           bidang e-sport game, yaitu Mobile Legends : Bang Bang. Mobile Legends
           adalah sebuah permainan mobile berjenis MOBA (Multiplayer Online
@@ -21,44 +19,42 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-[#132D46] dark:text-slate-300">
-          Ketentuan Umum
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Ketentuan Umum</h2>
 
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-400">
+        <p className="mt-2 text-base text-zinc-200">
           Ketentuan umum merupakan ketentuan yang berlaku untuk kategori
           perlombaan Mobile Legends
         </p>
 
         <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Peserta wajib menaati setiap peraturan yang ada.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Peserta wajib menjunjung tinggi sportivitas dan kejujuran.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Dilarang melakukan ujaran kebencian, mengandung SARA, dan negatif.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Panitia bisa mendiskualifikasi peserta apabila peserta melanggar
             aturan.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Segala kelalaian merupakan tanggung jawab setiap peserta maupun tim.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Gelar juara yang diperoleh tim dapat dicabut oleh pihak panitia
             apabila ditemukan kecurangan atau pelanggaran hukum dalam proses
             pelaksanaan perlombaan.
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Ketentuan pause 1x3 menit (Chat all &quot;P/Pause&quot;) berlaku
             pada saat semifinal dan final.
           </li>
@@ -66,99 +62,91 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-[#132D46] dark:text-slate-300">
-          Penghargaan
-        </h2>
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-400">
+        <h2 className="text-4xl font-bold text-zinc-50">Penghargaan</h2>
+        <p className="mt-2 text-base text-zinc-200">
           Penghargaan bagi para pemenang Mobile Legend
         </p>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Juara 1 : Uang Tunai senilai Rp. 700.000 + e-sertifikat
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Juara 2 : Uang Tunai senilai Rp. 500.000 + e-sertifikat
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Juara 3 : Uang Tunai senilai Rp. 300.000 + e-sertifikat
           </li>
         </ul>
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-[#132D46] dark:text-slate-300">
-          Pendaftaran
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Pendaftaran</h2>
 
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-400">
-          Timeline Mobile Legends
-        </p>
+        <p className="mt-2 text-base text-zinc-200">Timeline Mobile Legends</p>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Gelombang I : 9 - 22 September 2024
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Gelombang II : 23 September - 11 Oktober 2024
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Technical Meeting : 17 Oktober 2023
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Pelaksanaan Lomba : 15 Oktober 2024 - 19 Oktober 2024
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Penyisihan : 15 Oktober 2024
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Final : 19 Oktober 2024
           </li>
         </ul>
 
-        <p className="mt-5 text-base text-slate-600 dark:text-slate-400">
+        <p className="mt-5 text-base text-zinc-200">
           Biaya pendaftaran Mobile Legend sebesar
         </p>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Gelombang I : Rp. 40.000 per Tim/Slot
           </li>
 
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Gelombang II : Rp. 50.000 per Tim/Slot
           </li>
         </ul>
 
-        <p className="mt-5 text-base text-slate-600 dark:text-slate-400">
+        <p className="mt-5 text-base text-zinc-200">
           Biaya pendaftaran harus diberikan sebelum pendaftaran ditutup dengan
           transfer melalui :
         </p>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Dana: 082289046489 a.n. Anindya Salsabila
           </li>
         </ul>
       </section>
 
       <section className="mt-10">
-        <h2 className="text-4xl font-bold text-[#132D46] dark:text-slate-300">
-          Contact Person
-        </h2>
+        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-2 text-base text-zinc-200">
             Firman Situmorang : +62 813-1991-2461
           </li>
-          <li className="mt-0 text-base text-slate-600 dark:text-slate-400">
+          <li className="mt-0 text-base text-zinc-200">
             Jhon V Nababan : +62 813-7583-9812
           </li>
         </ul>
