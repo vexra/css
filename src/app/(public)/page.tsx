@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main className="dark:bg-black">
-      <div className="bg-gradient-three-colors h-screen">
+      <div className="h-screen bg-gradient-three-colors">
         <div className="xs:px-10 p-4 sm:px-20 md:flex md:flex-row-reverse md:pt-32">
           <div className="flex justify-center md:w-1/2 md:items-center md:justify-end xl:pr-24">
             <Image
