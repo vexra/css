@@ -7,6 +7,7 @@ import {
   authRoutes,
   publicRoutes,
   userRoutePrefix,
+  userRoutes,
 } from '@/routes'
 import { UserRole } from '@prisma/client'
 import NextAuth from 'next-auth'
@@ -20,7 +21,9 @@ export default auth((req) => {
   const isApiAuthRoute = nextUrl.pathname.startsWith(apiAuthPrefix)
   const isPublicRoute = publicRoutes.includes(nextUrl.pathname)
   const isAuthRoute = authRoutes.includes(nextUrl.pathname)
-  const isUserRoute = nextUrl.pathname.startsWith(userRoutePrefix)
+  const isUserRoute =
+    nextUrl.pathname.startsWith(userRoutePrefix) ||
+    userRoutes.includes(nextUrl.pathname)
   const isAdminRoute = nextUrl.pathname.startsWith(adminRoutePrefix)
 
   const isUser = req.auth?.user.role === UserRole.USER
