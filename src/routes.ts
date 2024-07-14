@@ -12,8 +12,19 @@ export const publicRoutes = [
 ]
 
 /**
+ * An array of routes that are accessible to the user
+ * These routes require authentication
+ */
+export const userRoutes = [
+  '/registrasi-cpc',
+  '/registrasi-futsal',
+  '/registrasi-lct',
+  '/registrasi-ml',
+]
+
+/**
  * An array of routes that are used for authentication
- * These routes will redirect logged in users to /settings
+ * These routes will redirect logged in users to /dashboard
  */
 export const authRoutes = ['/login']
 
