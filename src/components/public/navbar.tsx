@@ -76,11 +76,6 @@ export default async function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="/bazar" className="text-base font-medium text-zinc-50">
-              Bazar
-            </Link>
-          </li>
-          <li>
             <Link
               href="/pengumuman-lomba"
               className="text-base font-medium text-zinc-50"
