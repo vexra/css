@@ -278,4 +278,6 @@ export default async function registerFutsal(
       accountHolderName,
     },
   })
+
+  return redirect('/dashboard')
 }

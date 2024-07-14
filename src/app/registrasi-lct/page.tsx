@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function RegistrasiLCT() {
   return (
-    <main className="bg-gradient-three-colors font-sans">
+    <main className="bg-gradient-css font-sans">
       <div className="flex justify-center">
         <Image
           src="/images/logo/computer-science-showdown.png"
