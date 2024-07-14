@@ -23,7 +23,7 @@ export default async function Navbar() {
 
         <ul className="menu menu-horizontal hidden lg:flex">
           <li>
-            <Link href="/about" className="text-base font-medium text-zinc-50">
+            <Link href="/#about" className="text-base font-medium text-zinc-50">
               About
             </Link>
           </li>
