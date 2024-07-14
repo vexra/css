@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main className="dark:bg-black">
-      <div className="">
+      <div>
         <div className="xs:px-10 h-screen bg-gradient-three-colors p-4 sm:px-20 md:flex md:flex-row-reverse">
           <div className="flex justify-center md:w-1/2 md:justify-end md:pt-28 xl:pr-24">
             <div>
