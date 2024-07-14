@@ -15,8 +15,8 @@ import {
 export default function Home() {
   return (
     <main className="dark:bg-black">
-      <div>
-        <div className="xs:px-10 h-screen bg-gradient-three-colors p-4 sm:px-20 md:flex md:flex-row-reverse">
+      <div className="">
+        <div className="xs:px-10 bg-gradient-three-colors p-4 sm:px-20 md:flex md:h-screen md:flex-row-reverse">
           <div className="flex justify-center md:w-1/2 md:justify-end md:pt-28 xl:pr-24">
             <div>
               <Image
@@ -183,7 +183,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/lct"
-                    className="mb-10 mt-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
+                    className="mt-2 flex items-center gap-x-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
                   >
                     Read More <FaArrowRight />
                   </Link>
@@ -203,7 +203,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/cpc"
-                    className="mb-10s mt-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
+                    className="mt-2 flex items-center gap-x-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
                   >
                     Read More <FaArrowRight />
                   </Link>
@@ -223,7 +223,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/futsal"
-                    className="mb-10s mt-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
+                    className="mt-2 flex items-center gap-x-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
                   >
                     Read More <FaArrowRight />
                   </Link>
@@ -242,7 +242,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/ml"
-                    className="mb-10s mt-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
+                    className="mt-2 flex items-center gap-x-2 text-base text-slate-600 hover:text-[#7209B7] hover:underline hover:underline-offset-2 dark:text-slate-400"
                   >
                     Read More <FaArrowRight />
                   </Link>
