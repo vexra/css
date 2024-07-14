@@ -15,25 +15,28 @@ import {
 export default function Home() {
   return (
     <main className="dark:bg-black">
-      <div className="h-screen bg-gradient-three-colors">
-        <div className="xs:px-10 p-4 sm:px-20 md:flex md:flex-row-reverse md:pt-32">
-          <div className="flex justify-center md:w-1/2 md:items-center md:justify-end xl:pr-24">
+      <div className="">
+        <div className="h-screen bg-gradient-three-colors xs:px-10 p-4 sm:px-20 md:flex md:flex-row-reverse">
+          <div className="flex justify-center md:w-1/2  md:justify-end xl:pr-24 md:pt-28">
+          <div>
             <Image
               src="/images/logo/computer-science-showdown.png"
               alt="logo css"
-              width="240"
-              height="240"
+              width="360"
+              height="360"
             />
+
+          </div>
           </div>
 
-          <div className="md:flex md:w-1/2 md:flex-col md:justify-center md:ps-0">
+          <div className="md:flex md:w-1/2 md:flex-col md:pt-36">
             <h1 className="text-center text-4xl font-bold text-white md:text-start md:text-6xl">
               Dare to Dream Strive for Greatness
             </h1>
             <div className="flex justify-center md:justify-start">
               <Link
                 href="#about"
-                className="shadow-custom mt-5 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white hover:bg-violet-600 hover:delay-300 lg:mt-10"
+                className="shadow-custom mt-16 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white hover:bg-violet-600 hover:delay-300 lg:mt-10"
               >
                 Get Started
               </Link>
@@ -41,7 +44,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="reveal xs:px-10 bg-gradient-heading p-4 sm:px-20 lg:bg-none lg:opacity-0">
+        <section className="reveal xs:px-10 bg-gradient-three-colors p-4 sm:px-20 lg:bg-none lg:opacity-1">
           <div className="md:grid md:grid-cols-2 md:place-items-center md:gap-x-8 xl:mt-20 xl:flex xl:justify-center xl:gap-10">
             <div className="mt-8 flex w-full flex-col items-center rounded-xl bg-[#3A0CA3] px-4 py-16 md:h-80 md:w-80 md:justify-self-end md:py-0 md:pt-10 lg:pt-20">
               <FaRegCalendar className="text-5xl text-white" />
@@ -89,7 +92,7 @@ export default function Home() {
 
         <div className="mt-10 px-8">
           <section
-            className="reveal mt-10 font-semibold lg:opacity-0"
+            className="reveal mt-10 font-semibold lg:opacity-1"
             id="about"
           >
             <h2 className="text-center text-2xl text-[#7209B7]">About Us</h2>
@@ -412,7 +415,7 @@ export default function Home() {
           </h4>
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
-          <div className="group mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
+          <div className="group mt-16 mb-10 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
             <ul className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
