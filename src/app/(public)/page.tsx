@@ -16,17 +16,16 @@ export default function Home() {
   return (
     <main className="dark:bg-black">
       <div className="">
-        <div className="h-screen bg-gradient-three-colors xs:px-10 p-4 sm:px-20 md:flex md:flex-row-reverse">
-          <div className="flex justify-center md:w-1/2  md:justify-end xl:pr-24 md:pt-28">
-          <div>
-            <Image
-              src="/images/logo/computer-science-showdown.png"
-              alt="logo css"
-              width="360"
-              height="360"
-            />
-
-          </div>
+        <div className="xs:px-10 h-screen bg-gradient-three-colors p-4 sm:px-20 md:flex md:flex-row-reverse">
+          <div className="flex justify-center md:w-1/2 md:justify-end md:pt-28 xl:pr-24">
+            <div>
+              <Image
+                src="/images/logo/computer-science-showdown.png"
+                alt="logo css"
+                width="360"
+                height="360"
+              />
+            </div>
           </div>
 
           <div className="md:flex md:w-1/2 md:flex-col md:pt-36">
@@ -44,7 +43,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="reveal xs:px-10 bg-gradient-three-colors p-4 sm:px-20 lg:bg-none lg:opacity-1">
+        <section className="reveal xs:px-10 lg:opacity-1 bg-gradient-three-colors p-4 sm:px-20 lg:bg-none">
           <div className="md:grid md:grid-cols-2 md:place-items-center md:gap-x-8 xl:mt-20 xl:flex xl:justify-center xl:gap-10">
             <div className="mt-8 flex w-full flex-col items-center rounded-xl bg-[#3A0CA3] px-4 py-16 md:h-80 md:w-80 md:justify-self-end md:py-0 md:pt-10 lg:pt-20">
               <FaRegCalendar className="text-5xl text-white" />
@@ -92,7 +91,7 @@ export default function Home() {
 
         <div className="mt-10 px-8">
           <section
-            className="reveal mt-10 font-semibold lg:opacity-1"
+            className="reveal lg:opacity-1 mt-10 font-semibold"
             id="about"
           >
             <h2 className="text-center text-2xl text-[#7209B7]">About Us</h2>
@@ -415,7 +414,7 @@ export default function Home() {
           </h4>
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
-          <div className="group mt-16 mb-10 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
+          <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
             <ul className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
