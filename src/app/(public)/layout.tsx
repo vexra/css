@@ -63,9 +63,6 @@ export default async function Layout({
               </div>
             </li>
             <li>
-              <Link href="/bazar">Bazar</Link>
-            </li>
-            <li>
               <Link href="/pengumuman-lomba">Pengumuman Lomba</Link>
             </li>
             <li>
