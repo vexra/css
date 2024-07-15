@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className="mt-10 font-semibold">
             <div className="reveal">
-              <h4 className="text-center text-3xl font-semibold text-[#7209B7] dark:text-white">
+              <h4 className="text-center text-3xl font-semibold text-[#7209B7]">
                 Lomba
               </h4>
               <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
