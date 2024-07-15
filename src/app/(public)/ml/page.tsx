@@ -134,7 +134,7 @@ export default function Ml() {
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
-            Dana: 082289046489 a.n. Anindya Salsabila
+            Seabank : 901950749935 a/n Ananda Karunia Putri
           </li>
         </ul>
       </section>
@@ -150,11 +150,25 @@ export default function Ml() {
             Jhon V Nababan : +62 813-7583-9812
           </li>
         </ul>
+
+        <div className="mt-2 flex items-center gap-x-2">
+          <p className="text-base text-zinc-200">Lihat Poster panduan</p>
+
+          <Link
+            className="bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] bg-clip-text text-base font-semibold text-transparent hover:from-[#9B51E0] hover:to-[#020202]"
+            href={
+              'https://drive.google.com/file/d/1pGDfdDTSzOhm1baAT6J9N73O3eIRdJbQ/view?usp=drivesdk'
+            }
+            target="_blank"
+          >
+            Disini.
+          </Link>
+        </div>
       </section>
 
       <Link
         href="/registrasi-ml"
-        className="mx-auto mt-10 block w-fit rounded-lg bg-gradient-heading px-6 py-4 text-2xl font-semibold text-zinc-50 sm:px-8 md:px-16 md:text-4xl"
+        className="mx-auto mt-10 block w-fit rounded-lg bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] px-6 py-4 text-2xl font-semibold text-zinc-50 hover:from-[#7209B7] hover:to-[#ff0b99] sm:px-8 md:px-16 md:text-4xl"
       >
         Daftar Sekarang
       </Link>
