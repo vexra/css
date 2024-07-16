@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="reveal xs:px-10 lg:opacity-1 bg-gradient-three-colors p-4 sm:px-20 lg:bg-none">
+        <section className="xs:px-10 bg-gradient-three-colors p-4 sm:px-20 lg:bg-none">
           <div className="md:grid md:grid-cols-2 md:place-items-center md:gap-x-8 xl:mt-20 xl:flex xl:justify-center xl:gap-10">
             <div className="mt-8 flex w-full flex-col items-center rounded-xl bg-[#3A0CA3] px-4 py-16 md:h-80 md:w-80 md:justify-self-end md:py-0 md:pt-10 lg:pt-20">
               <FaRegCalendar className="text-5xl text-white" />
@@ -90,10 +90,7 @@ export default function Home() {
         </section>
 
         <div className="mt-10 px-8">
-          <section
-            className="reveal lg:opacity-1 mt-10 font-semibold"
-            id="about"
-          >
+          <section className="mt-10 font-semibold" id="about">
             <h2 className="text-center text-2xl text-[#7209B7]">About Us</h2>
             <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
@@ -121,7 +118,7 @@ export default function Home() {
             </p>
           </section>
 
-          <div className="reveal mt-10 font-semibold">
+          <div className="mt-10 font-semibold">
             <div className="md:mt-16 md:flex">
               <div className="md:w-1/2 md:pt-5">
                 <h2 className="mt-5 text-2xl text-[#7209B7] dark:text-white">
@@ -158,7 +155,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 font-semibold">
-            <div className="reveal">
+            <div>
               <h4 className="text-center text-3xl font-semibold text-[#7209B7]">
                 Lomba
               </h4>
@@ -256,7 +253,7 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
                   className="h-12"
@@ -331,7 +328,7 @@ export default function Home() {
               </li>
             </ul>
             <ul
-              className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+              className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
               aria-hidden="true"
             >
               <li>
@@ -415,7 +412,7 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
                   className="h-12"
@@ -490,7 +487,7 @@ export default function Home() {
               </li>
             </ul>
             <ul
-              className="animate-loop-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+              className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
               aria-hidden="true"
             >
               <li>
