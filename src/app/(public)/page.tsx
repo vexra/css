@@ -256,11 +256,10 @@ export default function Home() {
             <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/3m.svg"
+                  src="/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="90"
+                  height="90"
                 />
               </li>
               <li>
@@ -328,16 +327,15 @@ export default function Home() {
               </li>
             </ul>
             <ul
-              className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+              className="flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
               aria-hidden="true"
             >
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/3m.svg"
+                  src="/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="90"
+                  height="90"
                 />
               </li>
               <li>
@@ -415,8 +413,47 @@ export default function Home() {
             <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/3m.svg"
+                  src="/images/logo/infolomba.PNG"
+                  alt="logo"
+                  width="90"
+                  height="90"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo-seputar.infoid.jpg"
+                  alt="logo"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/logo hima IF.png"
+                  alt="logo"
+                  width="50"
+                  height="50"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Kawal Event.jpg"
+                  alt="logo"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png"
+                  alt="logo"
+                  width="150"
+                  height="150"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/LOGO TEKNOKRA.png"
                   alt="logo"
                   width="240"
                   height="240"
@@ -424,65 +461,26 @@ export default function Home() {
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/barstool-store.svg"
+                  src="/images/logo/logolombasma2.png"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="150"
+                  height="150"
                 />
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/budweiser.svg"
+                  src="/images/logo/Olimpiade Update.png"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="65"
+                  height="65"
                 />
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/buzzfeed.svg"
+                  src="/images/logo/pikr unila.jpeg"
                   alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/forbes.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/macys.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/menshealth.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/mrbeast.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
+                  width="65"
+                  height="65"
                 />
               </li>
             </ul>
@@ -492,8 +490,48 @@ export default function Home() {
             >
               <li>
                 <Image
+                  src="/images/logo/infolomba.PNG"
+                  alt="logo"
+                  width="90"
+                  height="90"
+                />
+              </li>
+              <li>
+                <Image
                   className="h-12"
-                  src="./asset/logos/3m.svg"
+                  src="/images/logo/Logo-seputar.infoid.jpg"
+                  alt="logo"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/logo hima IF.png"
+                  alt="logo"
+                  width="50"
+                  height="50"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Kawal Event.jpg"
+                  alt="logo"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png"
+                  alt="logo"
+                  width="150"
+                  height="150"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/LOGO TEKNOKRA.png"
                   alt="logo"
                   width="240"
                   height="240"
@@ -501,65 +539,26 @@ export default function Home() {
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/barstool-store.svg"
+                  src="/images/logo/logolombasma2.png"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="150"
+                  height="150"
                 />
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/budweiser.svg"
+                  src="/images/logo/Olimpiade Update.png"
                   alt="logo"
-                  width="240"
-                  height="240"
+                  width="65"
+                  height="65"
                 />
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/buzzfeed.svg"
+                  src="/images/logo/pikr unila.jpeg"
                   alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/forbes.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/macys.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/menshealth.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/mrbeast.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
+                  width="65"
+                  height="65"
                 />
               </li>
             </ul>
