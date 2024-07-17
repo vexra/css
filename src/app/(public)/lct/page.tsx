@@ -117,7 +117,7 @@ export default function Ml() {
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang I : Rp. 165.000/tim
+            Gelombang II : Rp. 165.000/tim
           </li>
         </ul>
 
@@ -129,19 +129,6 @@ export default function Ml() {
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
             Seabank : 901950749935 a/n Ananda Karunia Putri
-          </li>
-        </ul>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
-
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-zinc-200">
-            Luthfi Aditya : +62 812-1241-1730
-          </li>
-          <li className="mt-0 text-base text-zinc-200">
-            Clara Monica : +62 822-6948-8323
           </li>
         </ul>
 
@@ -158,6 +145,19 @@ export default function Ml() {
             Disini.
           </Link>
         </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
+
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
+          <li className="mt-2 text-base text-zinc-200">
+            Luthfi Aditya : +62 812-1241-1730
+          </li>
+          <li className="mt-0 text-base text-zinc-200">
+            Clara Monica : +62 822-6948-8323
+          </li>
+        </ul>
       </section>
 
       <Link

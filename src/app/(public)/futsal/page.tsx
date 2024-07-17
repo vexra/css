@@ -131,19 +131,6 @@ export default function Futsal() {
             Seabank : 901950749935 a/n Ananda Karunia Putri
           </li>
         </ul>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
-
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-zinc-200">
-            M.Raihan Al-Hayya : +62 813-6661-5653
-          </li>
-          <li className="mt-0 text-base text-zinc-200">
-            Hermawan Yogi Wibisono : +62 882-7665-2243
-          </li>
-        </ul>
 
         <div className="mt-2 flex items-center gap-x-2">
           <p className="text-base text-zinc-200">Lihat Poster panduan</p>
@@ -158,6 +145,19 @@ export default function Futsal() {
             Disini.
           </Link>
         </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
+
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
+          <li className="mt-2 text-base text-zinc-200">
+            M.Raihan Al-Hayya : +62 813-6661-5653
+          </li>
+          <li className="mt-0 text-base text-zinc-200">
+            Hermawan Yogi Wibisono : +62 882-7665-2243
+          </li>
+        </ul>
       </section>
 
       <Link
