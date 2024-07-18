@@ -137,19 +137,6 @@ export default function Ml() {
             Seabank : 901950749935 a/n Ananda Karunia Putri
           </li>
         </ul>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
-
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-zinc-200">
-            Firman Situmorang : +62 813-1991-2461
-          </li>
-          <li className="mt-0 text-base text-zinc-200">
-            Jhon V Nababan : +62 813-7583-9812
-          </li>
-        </ul>
 
         <div className="mt-2 flex items-center gap-x-2">
           <p className="text-base text-zinc-200">Lihat Poster panduan</p>
@@ -164,6 +151,19 @@ export default function Ml() {
             Disini.
           </Link>
         </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-4xl font-bold text-zinc-50">Contact Person</h2>
+
+        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
+          <li className="mt-2 text-base text-zinc-200">
+            Firman Situmorang : +62 813-1991-2461
+          </li>
+          <li className="mt-0 text-base text-zinc-200">
+            Jhon V Nababan : +62 813-7583-9812
+          </li>
+        </ul>
       </section>
 
       <Link
