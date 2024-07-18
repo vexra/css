@@ -253,7 +253,7 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               <li>
                 <Image
                   src="/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg"
@@ -264,141 +264,10 @@ export default function Home() {
               </li>
               <li>
                 <Image
-                  className="h-12"
-                  src="./asset/logos/barstool-store.svg"
+                  src="/images/logo/Khazzanah Tour & Travel Cab. Lampung.png"
                   alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/budweiser.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/buzzfeed.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/forbes.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/macys.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/menshealth.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/mrbeast.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-            </ul>
-            <ul
-              className="flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
-              aria-hidden="true"
-            >
-              <li>
-                <Image
-                  src="/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg"
-                  alt="logo"
-                  width="90"
-                  height="90"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/barstool-store.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/budweiser.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/buzzfeed.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/forbes.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/macys.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/menshealth.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  className="h-12"
-                  src="./asset/logos/mrbeast.svg"
-                  alt="logo"
-                  width="240"
-                  height="240"
+                  width="70"
+                  height="70"
                 />
               </li>
             </ul>
@@ -483,6 +352,22 @@ export default function Home() {
                   height="65"
                 />
               </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Rakanila.png"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Kejar Mimpi Lampung.jpg"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
             </ul>
             <ul
               className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
@@ -498,7 +383,6 @@ export default function Home() {
               </li>
               <li>
                 <Image
-                  className="h-12"
                   src="/images/logo/Logo-seputar.infoid.jpg"
                   alt="logo"
                   width="100"
@@ -556,6 +440,22 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/logo/pikr unila.jpeg"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Rakanila.png"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Kejar Mimpi Lampung.jpg"
                   alt="logo"
                   width="65"
                   height="65"
