@@ -101,4 +101,6 @@ export default async function registerLct(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+
+  return redirect('/dashboard')
 }
