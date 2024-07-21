@@ -368,6 +368,14 @@ export default function Home() {
                   height="65"
                 />
               </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Himafi-1.png"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
             </ul>
             <ul
               className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
@@ -456,6 +464,14 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/logo/Logo Kejar Mimpi Lampung.jpg"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Logo Himafi-1.png"
                   alt="logo"
                   width="65"
                   height="65"
