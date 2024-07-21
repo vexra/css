@@ -7,7 +7,7 @@ const sizeInMB = (sizeInBytes: number, decimalsNum = 2) => {
   return +result.toFixed(decimalsNum)
 }
 
-const ACCEPTED_FILE_TYPES = ['image/*']
+const ACCEPTED_FILE_TYPES = ['image/']
 
 export const registerCpcSchema = z.object({
   email: z

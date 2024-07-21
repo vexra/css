@@ -57,4 +57,6 @@ export default async function registerCpc(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+
+  return redirect('/dashboard')
 }

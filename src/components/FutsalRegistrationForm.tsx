@@ -1466,7 +1466,7 @@ export default function FutsalRegistrationForm() {
 
       <div className="mt-8 flex gap-2 text-white">
         <Link
-          href="/"
+          href="/futsal"
           className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
         >
           Kembali
