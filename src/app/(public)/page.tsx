@@ -376,6 +376,22 @@ export default function Home() {
                   height="65"
                 />
               </li>
+              <li>
+                <Image
+                  src="/images/logo/HIMATIKA.PNG"
+                  alt="logo"
+                  width="75"
+                  height="75"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Himatro.png"
+                  alt="logo"
+                  width="75"
+                  height="75"
+                />
+              </li>
             </ul>
             <ul
               className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
@@ -475,6 +491,22 @@ export default function Home() {
                   alt="logo"
                   width="65"
                   height="65"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/HIMATIKA.PNG"
+                  alt="logo"
+                  width="75"
+                  height="75"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Himatro.png"
+                  alt="logo"
+                  width="75"
+                  height="75"
                 />
               </li>
             </ul>
