@@ -392,6 +392,14 @@ export default function Home() {
                   height="75"
                 />
               </li>
+              <li>
+                <Image
+                  src="/images/logo/logo mpl.png"
+                  alt="logo"
+                  width="120"
+                  height="120"
+                />
+              </li>
             </ul>
             <ul
               className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
@@ -507,6 +515,14 @@ export default function Home() {
                   alt="logo"
                   width="75"
                   height="75"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/logo mpl.png"
+                  alt="logo"
+                  width="120"
+                  height="120"
                 />
               </li>
             </ul>
