@@ -1,3 +1,4 @@
+import { origin } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
@@ -117,7 +118,7 @@ export default function Footer() {
       <p className="mt-12 text-center text-sm text-zinc-50">
         &copy; {new Date().getFullYear()}{' '}
         <Link
-          href="https://cs-showdown.vercel.app"
+          href={origin}
           className="font-bold hover:underline"
           target="_blank"
           rel="noopener noreferrer"

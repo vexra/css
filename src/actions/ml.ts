@@ -191,4 +191,6 @@ export default async function registerMl(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+
+  return redirect('/dashboard')
 }
