@@ -4,7 +4,7 @@ export default function Ml() {
   return (
     <main className="bg-gradient-css p-4 sm:p-6 md:px-20 md:py-8">
       <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-center text-5xl font-bold text-transparent text-zinc-50">
-        Competitive Programming Competition
+        National Competitive Programming Competition
       </h1>
 
       <section className="mt-10">
@@ -13,15 +13,16 @@ export default function Ml() {
         <div className="mt-2 flex flex-col gap-4 text-base text-zinc-200">
           <p>
             Competitive Programming Competition adalah salah satu rangkaian
-            kompetisi pada acara Computer Science Showdown Universitas Lampung.
-            Competitive Programming menguji kemampuan peserta dalam
+            kompetisi pada acara Computer Science Showdown Universitas Lampung
+            dan satu-satunya kompetisi berskala nasional. Competitive
+            Programming Competition menguji kemampuan peserta dalam
             menyelesaikan suatu masalah secara sistematis menggunakan bahasa
             pemrograman yang telah ditentukan, yaitu C/C++/Java. Perlombaan akan
             dilaksanakan pada platform hackerrank.com Penilaian akan dihitung
             berdasarkan kecepatan waktu dalam mengerjakan kode pemrograman serta
             poin yang diperoleh jika peserta berhasil menjawab dengan tepat.
             Peringkat Competitive Programming Competition menggunakan sistem
-            papan skor dari platform hackerrank.
+            papan skor dari platform hackerrank.
           </p>
 
           <p>
