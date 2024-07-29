@@ -10,15 +10,21 @@ export default async function registerCpc(prevState: any, formData: FormData) {
   const user = await currentUser()
   if (!user) return redirect('/')
 
+  console.log(22)
+
   const validatedFields = registerCpcSchema.safeParse(
     Object.fromEntries(formData),
   )
 
   if (!validatedFields.success) {
+    console.log('ste')
+    console.log(validatedFields.error.flatten().fieldErrors)
     return {
       errors: validatedFields.error.flatten().fieldErrors,
     }
   }
+
+  console.log(33)
 
   const {
     accountHolderName,
@@ -43,6 +49,8 @@ export default async function registerCpc(prevState: any, formData: FormData) {
     studentCardBlobPromise,
     paymentProofBlobPromise,
   ])
+
+  console.log(result)
 
   const cpc = await db.cpc.create({
     data: {
