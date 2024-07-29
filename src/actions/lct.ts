@@ -101,4 +101,5 @@ export default async function registerLct(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+  redirect('wa-lct')
 }

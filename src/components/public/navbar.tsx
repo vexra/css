@@ -83,7 +83,7 @@ export default async function Navbar() {
               Pengumuman Lomba
             </Link>
           </li>
-          <li>
+          {/* <li>
             {user?.role === UserRole.ADMIN && (
               <Link
                 href="/admin"
@@ -100,7 +100,7 @@ export default async function Navbar() {
                 Administrasi
               </Link>
             )}
-          </li>
+          </li> */}
         </ul>
       </div>
 

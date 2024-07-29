@@ -65,4 +65,6 @@ export default async function registerCpc(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+
+  redirect('wa-cpc')
 }

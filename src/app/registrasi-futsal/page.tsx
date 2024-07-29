@@ -18,7 +18,7 @@ export default function RegistrasiFutsal() {
 
       <div className="flex justify-center">
         <div className="mt-5 w-full px-4 pb-8 md:max-w-xl">
-          <div className="bg-custom-gray rounded-3xl p-8">
+          <div className="rounded-3xl bg-custom-gray p-8">
             <FutsalRegistrationForm />
           </div>
         </div>

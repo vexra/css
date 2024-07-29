@@ -73,7 +73,7 @@ export default function CPCRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="email"
             type="email"
             name="email"
@@ -92,7 +92,7 @@ export default function CPCRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullname"
             type="text"
             name="fullname"
@@ -111,7 +111,7 @@ export default function CPCRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phone"
             type="text"
             name="phone"
@@ -133,7 +133,7 @@ export default function CPCRegistrationForm() {
             Instansi
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="institution"
             type="text"
             name="institution"
@@ -152,7 +152,7 @@ export default function CPCRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdate"
             type="date"
             name="birthdate"
@@ -174,7 +174,7 @@ export default function CPCRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCard"
             type="file"
             accept="image/*"
@@ -202,7 +202,7 @@ export default function CPCRegistrationForm() {
             Upload Bukti Pembayaran
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="paymentProof"
             type="file"
             accept="image/*"
@@ -225,7 +225,7 @@ export default function CPCRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
@@ -243,7 +243,7 @@ export default function CPCRegistrationForm() {
       <div className="mt-8 flex gap-2 text-white">
         <Link
           href="/"
-          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold duration-500 hover:bg-red-600"
         >
           Kembali
         </Link>
@@ -260,7 +260,7 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+      className="w-1/2 rounded-xl bg-green-500 py-4 text-center font-bold duration-500 hover:bg-green-600"
     >
       Daftar
     </button>
