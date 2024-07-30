@@ -162,7 +162,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameLead"
             type="text"
             name="fullnameLead"
@@ -184,7 +184,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameLead"
             type="text"
             name="usernameLead"
@@ -206,7 +206,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdLead"
             type="text"
             name="userIdLead"
@@ -225,7 +225,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneLead"
             type="text"
             name="phoneLead"
@@ -247,7 +247,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateLead"
             type="date"
             name="birthdateLead"
@@ -269,7 +269,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardLead"
             type="file"
             accept="image/*"
@@ -299,7 +299,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
@@ -321,7 +321,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameMember1"
             type="text"
             name="usernameMember1"
@@ -343,7 +343,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdMember1"
             type="text"
             name="userIdMember1"
@@ -365,7 +365,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember1"
             type="text"
             name="phoneMember1"
@@ -387,7 +387,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember1"
             type="date"
             name="birthdateMember1"
@@ -409,7 +409,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember1"
             type="file"
             accept="image/*"
@@ -439,7 +439,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
@@ -461,7 +461,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameMember2"
             type="text"
             name="usernameMember2"
@@ -483,7 +483,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdMember2"
             type="text"
             name="userIdMember2"
@@ -505,7 +505,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember2"
             type="text"
             name="phoneMember2"
@@ -527,7 +527,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember2"
             type="date"
             name="birthdateMember2"
@@ -549,7 +549,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember2"
             type="file"
             accept="image/*"
@@ -579,7 +579,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember3"
             type="text"
             name="fullnameMember3"
@@ -601,7 +601,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameMember3"
             type="text"
             name="usernameMember3"
@@ -623,7 +623,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdMember3"
             type="text"
             name="userIdMember3"
@@ -645,7 +645,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember3"
             type="text"
             name="phoneMember3"
@@ -667,7 +667,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember3"
             type="date"
             name="birthdateMember3"
@@ -689,7 +689,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember3"
             type="file"
             accept="image/*"
@@ -719,7 +719,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember4"
             type="text"
             name="fullnameMember4"
@@ -741,7 +741,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameMember4"
             type="text"
             name="usernameMember4"
@@ -763,7 +763,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdMember4"
             type="text"
             name="userIdMember4"
@@ -785,7 +785,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember4"
             type="text"
             name="phoneMember4"
@@ -807,7 +807,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember4"
             type="date"
             name="birthdateMember4"
@@ -829,7 +829,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember4"
             type="file"
             accept="image/*"
@@ -859,7 +859,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameSubtituteMember1"
             type="text"
             name="fullnameSubtituteMember1"
@@ -881,7 +881,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameSubtituteMember1"
             type="text"
             name="usernameSubtituteMember1"
@@ -903,7 +903,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdSubtituteMember1"
             type="text"
             name="userIdSubtituteMember1"
@@ -925,7 +925,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneSubtituteMember1"
             type="text"
             name="phoneSubtituteMember1"
@@ -947,7 +947,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateSubtituteMember1"
             type="date"
             name="birthdateSubtituteMember1"
@@ -969,7 +969,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardSubtituteMember1"
             type="file"
             accept="image/*"
@@ -999,7 +999,7 @@ export default function MLRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameSubtituteMember2"
             type="text"
             name="fullnameSubtituteMember2"
@@ -1021,7 +1021,7 @@ export default function MLRegistrationForm() {
             Username
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="usernameSubtituteMember2"
             type="text"
             name="usernameSubtituteMember2"
@@ -1043,7 +1043,7 @@ export default function MLRegistrationForm() {
             User Id
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="userIdSubtituteMember2"
             type="text"
             name="userIdSubtituteMember2"
@@ -1065,7 +1065,7 @@ export default function MLRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneSubtituteMember2"
             type="text"
             name="phoneSubtituteMember2"
@@ -1087,7 +1087,7 @@ export default function MLRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateSubtituteMember2"
             type="date"
             name="birthdateSubtituteMember2"
@@ -1109,7 +1109,7 @@ export default function MLRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardSubtituteMember2"
             type="file"
             accept="image/*"
@@ -1136,7 +1136,7 @@ export default function MLRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="email"
             type="email"
             name="email"
@@ -1155,7 +1155,7 @@ export default function MLRegistrationForm() {
             Nama Tim
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="teamName"
             type="text"
             name="teamName"
@@ -1184,7 +1184,7 @@ export default function MLRegistrationForm() {
             Upload Bukti Pembayaran
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="paymentProof"
             type="file"
             accept="image/*"
@@ -1207,7 +1207,7 @@ export default function MLRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
@@ -1226,7 +1226,7 @@ export default function MLRegistrationForm() {
       <div className="mt-8 flex gap-2 text-white">
         <Link
           href="/ml"
-          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold duration-500 hover:bg-red-600"
         >
           Kembali
         </Link>
@@ -1242,7 +1242,7 @@ export default function MLRegistrationForm() {
       <button
         type="submit"
         disabled={pending}
-        className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+        className="w-1/2 rounded-xl bg-green-500 py-4 text-center font-bold duration-500 hover:bg-green-600"
       >
         Daftar
       </button>

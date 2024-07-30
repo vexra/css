@@ -279,5 +279,5 @@ export default async function registerFutsal(
     },
   })
 
-  return redirect('/dashboard')
+  redirect('wa-futsal')
 }

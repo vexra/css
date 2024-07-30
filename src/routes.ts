@@ -9,6 +9,10 @@ export const publicRoutes = [
   '/lct',
   '/ml',
   '/pengumuman-lomba',
+  '/wa-cpc',
+  '/wa-futsal',
+  '/wa-lct',
+  '/wa-ml',
 ]
 
 /**
@@ -37,7 +41,7 @@ export const apiAuthPrefix = '/api/auth'
 /**
  * The default redirect path after user logging in
  */
-export const DEFAULT_USER_LOGIN_REDIRECT = '/dashboard'
+export const DEFAULT_USER_LOGIN_REDIRECT = '/#about'
 
 /**
  * The default redirect path after admin logging in

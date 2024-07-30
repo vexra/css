@@ -58,5 +58,5 @@ export default async function registerCpc(prevState: any, formData: FormData) {
     },
   })
 
-  return redirect('/dashboard')
+  redirect('wa-cpc')
 }

@@ -34,9 +34,9 @@ export default async function Layout({
             </label>
           </div>
 
-          <ul className="flex flex-col gap-4 text-center">
+          <ul className="flex flex-grow flex-col gap-4 text-center">
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li>
               <div className="dropdown dropdown-bottom">
@@ -70,6 +70,13 @@ export default async function Layout({
               {role === 'USER' && <Link href="/dashboard">Administrasi</Link>}
             </li>
           </ul>
+
+          <Link
+            href="/login"
+            className="w-full rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
+          >
+            Log in
+          </Link>
         </section>
       </div>
     </div>

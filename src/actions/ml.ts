@@ -192,5 +192,5 @@ export default async function registerMl(prevState: any, formData: FormData) {
     },
   })
 
-  return redirect('/dashboard')
+  redirect('wa-ml')
 }

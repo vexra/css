@@ -83,24 +83,6 @@ export default async function Navbar() {
               Pengumuman Lomba
             </Link>
           </li>
-          <li>
-            {user?.role === UserRole.ADMIN && (
-              <Link
-                href="/admin"
-                className="text-base font-medium text-zinc-50"
-              >
-                Administrasi
-              </Link>
-            )}
-            {user?.role === UserRole.USER && (
-              <Link
-                href="/dashboard"
-                className="text-base font-medium text-zinc-50"
-              >
-                Administrasi
-              </Link>
-            )}
-          </li>
         </ul>
       </div>
 
