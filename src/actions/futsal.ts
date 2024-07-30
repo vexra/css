@@ -278,6 +278,6 @@ export default async function registerFutsal(
       accountHolderName,
     },
   })
-  
+
   redirect('wa-futsal')
 }
