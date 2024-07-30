@@ -191,5 +191,6 @@ export default async function registerMl(prevState: any, formData: FormData) {
       accountHolderName,
     },
   })
+
   redirect('wa-ml')
 }
