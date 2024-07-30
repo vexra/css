@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex justify-center md:justify-start">
               <Link
                 href="#about"
-                className="shadow-custom mt-16 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white hover:bg-violet-600 hover:delay-300 lg:mt-10"
+                className="mt-16 rounded-full bg-violet-600 bg-opacity-60 px-10 py-3.5 text-lg font-bold text-white shadow-custom hover:bg-violet-600 hover:delay-300 lg:mt-10"
               >
                 Get Started
               </Link>
@@ -62,7 +62,7 @@ export default function Home() {
               </h3>
               <p className="mt-2 text-center text-white">
                 Pelaksanaan 4 cabang lomba akan dilaksanakan mulai tanggal 12
-                Oktober - 20 Oktober
+                Oktober - 20 Oktober 2024
               </p>
             </div>
 

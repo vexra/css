@@ -225,7 +225,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameLead"
             type="text"
             name="fullnameLead"
@@ -244,7 +244,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneLead"
             type="text"
             name="phoneLead"
@@ -266,7 +266,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateLead"
             type="date"
             name="birthdateLead"
@@ -288,7 +288,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardLead"
             type="file"
             accept="image/*"
@@ -318,7 +318,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember1"
             type="text"
             name="fullnameMember1"
@@ -340,7 +340,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember1"
             type="text"
             name="phoneMember1"
@@ -362,7 +362,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember1"
             type="date"
             name="birthdateMember1"
@@ -384,7 +384,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember1"
             type="file"
             accept="image/*"
@@ -414,7 +414,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember2"
             type="text"
             name="fullnameMember2"
@@ -436,7 +436,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember2"
             type="text"
             name="phoneMember2"
@@ -458,7 +458,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember2"
             type="date"
             name="birthdateMember2"
@@ -480,7 +480,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember2"
             type="file"
             accept="image/*"
@@ -510,7 +510,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember3"
             type="text"
             name="fullnameMember3"
@@ -532,7 +532,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember3"
             type="text"
             name="phoneMember3"
@@ -554,7 +554,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember3"
             type="date"
             name="birthdateMember3"
@@ -576,7 +576,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember3"
             type="file"
             accept="image/*"
@@ -606,7 +606,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember4"
             type="text"
             name="fullnameMember4"
@@ -628,7 +628,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember4"
             type="text"
             name="phoneMember4"
@@ -650,7 +650,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember4"
             type="date"
             name="birthdateMember4"
@@ -672,7 +672,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember4"
             type="file"
             accept="image/*"
@@ -702,7 +702,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember5"
             type="text"
             name="fullnameMember5"
@@ -724,7 +724,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember5"
             type="text"
             name="phoneMember5"
@@ -746,7 +746,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember5"
             type="date"
             name="birthdateMember5"
@@ -768,7 +768,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember5"
             type="file"
             accept="image/*"
@@ -798,7 +798,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember6"
             type="text"
             name="fullnameMember6"
@@ -820,7 +820,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember6"
             type="text"
             name="phoneMember6"
@@ -842,7 +842,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember6"
             type="date"
             name="birthdateMember6"
@@ -864,7 +864,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember6"
             type="file"
             accept="image/*"
@@ -894,7 +894,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember7"
             type="text"
             name="fullnameMember7"
@@ -916,7 +916,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember7"
             type="text"
             name="phoneMember7"
@@ -938,7 +938,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember7"
             type="date"
             name="birthdateMember7"
@@ -960,7 +960,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember7"
             type="file"
             accept="image/*"
@@ -990,7 +990,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember8"
             type="text"
             name="fullnameMember8"
@@ -1012,7 +1012,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember8"
             type="text"
             name="phoneMember8"
@@ -1034,7 +1034,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember8"
             type="date"
             name="birthdateMember8"
@@ -1056,7 +1056,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember8"
             type="file"
             accept="image/*"
@@ -1086,7 +1086,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember9"
             type="text"
             name="fullnameMember9"
@@ -1108,7 +1108,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember9"
             type="text"
             name="phoneMember9"
@@ -1130,7 +1130,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember9"
             type="date"
             name="birthdateMember9"
@@ -1152,7 +1152,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember9"
             type="file"
             accept="image/*"
@@ -1182,7 +1182,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameMember10"
             type="text"
             name="fullnameMember10"
@@ -1204,7 +1204,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneMember10"
             type="text"
             name="phoneMember10"
@@ -1226,7 +1226,7 @@ export default function FutsalRegistrationForm() {
             Tanggal Lahir
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="birthdateMember10"
             type="date"
             name="birthdateMember10"
@@ -1248,7 +1248,7 @@ export default function FutsalRegistrationForm() {
             <small className="font-normal text-slate-300">Max 1 Mb</small>
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="studentCardMember10"
             type="file"
             accept="image/*"
@@ -1278,7 +1278,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameAssistant1"
             type="text"
             name="fullnameAssistant1"
@@ -1300,7 +1300,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneAssistant1"
             type="text"
             name="phoneAssistant1"
@@ -1329,7 +1329,7 @@ export default function FutsalRegistrationForm() {
             Nama Lengkap
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="fullnameAssistant2"
             type="text"
             name="fullnameAssistant2"
@@ -1351,7 +1351,7 @@ export default function FutsalRegistrationForm() {
             No. Telpon
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="phoneAssistant2"
             type="text"
             name="phoneAssistant2"
@@ -1377,7 +1377,7 @@ export default function FutsalRegistrationForm() {
             Email
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="email"
             type="email"
             name="email"
@@ -1396,7 +1396,7 @@ export default function FutsalRegistrationForm() {
             Nama Tim
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="teamName"
             type="text"
             name="teamName"
@@ -1425,7 +1425,7 @@ export default function FutsalRegistrationForm() {
             Upload Bukti Pembayaran
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
             id="paymentProof"
             type="file"
             accept="image/*"
@@ -1448,7 +1448,7 @@ export default function FutsalRegistrationForm() {
             Atas Nama
           </label>
           <input
-            className="shadow-custom mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 outline-none"
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
             id="accountHolderName"
             type="text"
             name="accountHolderName"
@@ -1467,7 +1467,7 @@ export default function FutsalRegistrationForm() {
       <div className="mt-8 flex gap-2 text-white">
         <Link
           href="/futsal"
-          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold"
+          className="w-1/2 rounded-xl bg-red-500 py-4 text-center font-bold duration-500 hover:bg-red-600"
         >
           Kembali
         </Link>
@@ -1483,7 +1483,7 @@ export default function FutsalRegistrationForm() {
       <button
         type="submit"
         disabled={pending}
-        className="w-1/2 rounded-xl bg-green-400 py-4 text-center font-bold"
+        className="w-1/2 rounded-xl bg-green-500 py-4 text-center font-bold duration-500 hover:bg-green-600"
       >
         Daftar
       </button>

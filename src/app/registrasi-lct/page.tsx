@@ -1,7 +1,17 @@
 import LCTRegistrationForm from '@/components/LCTRegistrationForm'
+import { isInRange } from '@/lib/utils'
 import Image from 'next/image'
 
 export default function RegistrasiLCT() {
+  const now = new Date()
+  const startDate1 = new Date('2024-08-01')
+  const endDate1 = new Date('2024-08-30')
+  const startDate2 = new Date('2024-09-08')
+  const endDate2 = new Date('2024-10-08')
+
+  const isRegistrationOpen =
+    isInRange(now, startDate1, endDate1) || isInRange(now, startDate2, endDate2)
+
   return (
     <main className="bg-gradient-css font-sans">
       <div className="flex justify-center">
@@ -18,8 +28,12 @@ export default function RegistrasiLCT() {
 
       <div className="flex justify-center">
         <div className="mt-5 w-full px-4 pb-8 md:max-w-xl">
-          <div className="bg-custom-gray rounded-3xl p-8">
-            <LCTRegistrationForm />
+          <div className="rounded-3xl bg-custom-gray p-8">
+            {isRegistrationOpen ? (
+              <LCTRegistrationForm />
+            ) : (
+              <p>Maaf, waktu pendaftaran sudah ditutup.</p>
+            )}
           </div>
         </div>
       </div>

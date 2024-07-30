@@ -36,7 +36,7 @@ export default async function Layout({
 
           <ul className="flex flex-grow flex-col gap-4 text-center">
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li>
               <div className="dropdown dropdown-bottom">
