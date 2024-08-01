@@ -1,3 +1,4 @@
+import logout from '@/actions/logout'
 import Footer from '@/components/public/footer'
 import Navbar from '@/components/public/navbar'
 import { currentRole } from '@/lib/auth'
@@ -65,18 +66,31 @@ export default async function Layout({
             <li>
               <Link href="/pengumuman-lomba">Pengumuman Lomba</Link>
             </li>
-            <li>
+            {/* <li>
               {role === 'ADMIN' && <Link href="/admin">Administrasi</Link>}
               {role === 'USER' && <Link href="/dashboard">Administrasi</Link>}
-            </li>
+            </li> */}
           </ul>
 
-          <Link
-            href="/login"
-            className="w-full rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
-          >
-            Log in
-          </Link>
+          {!!role ? (
+            <>
+              <form action={logout}>
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
+                >
+                  Keluar
+                </button>
+              </form>
+            </>
+          ) : (
+            <Link
+              href="/login"
+              className="w-full rounded-lg bg-[#3A0CA3] px-4 py-2.5 text-center text-sm font-bold text-zinc-50"
+            >
+              Log in
+            </Link>
+          )}
         </section>
       </div>
     </div>
