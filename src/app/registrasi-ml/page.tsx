@@ -13,7 +13,7 @@ export default function RegistrasiML() {
     isInRange(now, startDate1, endDate1) || isInRange(now, startDate2, endDate2)
 
   return (
-    <main className="bg-gradient-css font-sans">
+    <main className="bg-gradient-css min-h-screen font-sans">
       <div className="flex justify-center">
         <Image
           src="/images/logo/computer-science-showdown.png"
