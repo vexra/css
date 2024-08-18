@@ -1,8 +1,11 @@
 import CPCRegistrationForm from '@/components/CPCRegistrationForm'
 import { isInRange } from '@/lib/utils'
 import Image from 'next/image'
+import { unstable_noStore as noStore } from 'next/cache';
 
 export default function RegistrasiCPC() {
+  noStore();
+  
   const now = new Date()
   const startDate1 = new Date('2024-08-01')
   const endDate1 = new Date('2024-08-30')

@@ -1,8 +1,11 @@
 import FutsalRegistrationForm from '@/components/FutsalRegistrationForm'
 import { isInRange } from '@/lib/utils'
 import Image from 'next/image'
+import { unstable_noStore as noStore } from 'next/cache';
 
 export default function RegistrasiFutsal() {
+  noStore();
+
   const now = new Date()
   const startDate1 = new Date('2024-08-15')
   const endDate1 = new Date('2024-09-10')
