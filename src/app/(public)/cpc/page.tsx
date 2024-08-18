@@ -54,7 +54,7 @@ export default function Ml() {
         <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
             Peserta lomba adalah masyarakat umur dari seluruh Indonesia yang
-            berusia 16-24 tahun yang belum pernah mengikuti Olimpiade komputer
+            berusia 16-24 tahun yang belum pernah memenangkan Olimpiade komputer
             tingkat nasional yang diselenggarakan kementerian pendidikan dan
             kebudayaan.
           </li>
