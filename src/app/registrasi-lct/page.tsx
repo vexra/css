@@ -1,10 +1,10 @@
 import LCTRegistrationForm from '@/components/LCTRegistrationForm'
 import { isInRange } from '@/lib/utils'
+import { unstable_noStore as noStore } from 'next/cache'
 import Image from 'next/image'
-import { unstable_noStore as noStore } from 'next/cache';
 
 export default function RegistrasiLCT() {
-  noStore();
+  noStore()
 
   const now = new Date()
   const startDate1 = new Date('2024-08-01')
