@@ -270,6 +270,30 @@ export default function Home() {
                   height="70"
                 />
               </li>
+              <li>
+                <Image
+                  src="/images/logo/PT. Indonesia Teknologi.png"
+                  alt="logo"
+                  width="70"
+                  height="70"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/Eleos.jpeg"
+                  alt="logo"
+                  width="70"
+                  height="70"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/images/logo/KING.png"
+                  alt="logo"
+                  width="70"
+                  height="70"
+                />
+              </li>
             </ul>
           </div>
 
