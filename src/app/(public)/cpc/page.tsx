@@ -191,7 +191,7 @@ export default function Ml() {
           <Link
             className="bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] bg-clip-text text-base font-semibold text-transparent hover:from-[#9B51E0] hover:to-[#020202]"
             href={
-              'https://drive.google.com/file/d/1pL9hYXi5igan_5y_PhbI2jgydyqxz4pP/view?usp=drivesdk'
+              'https://drive.google.com/file/d/18PSyMgKoEt2GcYBbTFZeaygPpJoh_u9Z/view?usp=drivesdk'
             }
             target="_blank"
           >
