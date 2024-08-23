@@ -420,7 +420,7 @@ export default function Home() {
                   </li>
                 ))}
             </ul>
-            <ul className="animate-loop-scroll-50 flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start lg:hidden [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start lg:hidden [&_img]:max-w-none [&_li]:mx-8">
               {sponsors.map((sponsor, index) => (
                 <li key={index}>
                   <Image
@@ -440,7 +440,7 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="animate-loop-scroll-50 flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               {medpart.map((medpart, index) => (
                 <li key={index}>
                   <Image
