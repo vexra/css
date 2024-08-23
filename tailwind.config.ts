@@ -35,7 +35,8 @@ const config: Config = {
         third: '#F72585',
       },
       animation: {
-        'loop-scroll': 'loop-scroll 50s linear infinite',
+        'loop-scroll': 'loop-scroll 10s linear infinite',
+        'loop-scroll-50': 'loop-scroll 50s linear infinite',
       },
       keyframes: {
         'loop-scroll': {

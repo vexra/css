@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import {
   FaArrowRight,
   FaCheckCircle,
@@ -13,6 +16,156 @@ import {
 } from 'react-icons/fa'
 
 export default function Home() {
+  const [sponsors, setSponsors] = useState<
+    { src: string; alt: string; width: string; height: string }[]
+  >([])
+
+  const [medpart, setMedpart] = useState<
+    { src: string; alt: string; width: string; height: string }[]
+  >([])
+
+  const originalSponsors = [
+    {
+      src: '/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg',
+      alt: 'logo',
+      width: '90',
+      height: '90',
+    },
+    {
+      src: '/images/logo/Khazzanah Tour & Travel Cab. Lampung.png',
+      alt: 'logo',
+      width: '70',
+      height: '70',
+    },
+    {
+      src: '/images/logo/PT. Indonesia Teknologi.png',
+      alt: 'logo',
+      width: '70',
+      height: '70',
+    },
+    {
+      src: '/images/logo/Eleos.jpeg',
+      alt: 'logo',
+      width: '70',
+      height: '70',
+    },
+    {
+      src: '/images/logo/KING.png',
+      alt: 'logo',
+      width: '70',
+      height: '70',
+    },
+  ]
+
+  const originalMedpart = [
+    {
+      src: '/images/logo/infolomba.PNG',
+      alt: 'logo',
+      width: '90',
+      height: '90',
+    },
+    {
+      src: '/images/logo/Logo-seputar.infoid.jpg',
+      alt: 'logo',
+      width: '100',
+      height: '100',
+    },
+    {
+      src: '/images/logo/logo hima IF.png',
+      alt: 'logo',
+      width: '50',
+      height: '50',
+    },
+    {
+      src: '/images/logo/Logo Kawal Event.jpg',
+      alt: 'logo',
+      width: '100',
+      height: '100',
+    },
+    {
+      src: '/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png',
+      alt: 'logo',
+      width: '150',
+      height: '150',
+    },
+    {
+      src: '/images/logo/LOGO TEKNOKRA.png',
+      alt: 'logo',
+      width: '240',
+      height: '240',
+    },
+    {
+      src: '/images/logo/logolombasma2.png',
+      alt: 'logo',
+      width: '150',
+      height: '150',
+    },
+    {
+      src: '/images/logo/Olimpiade Update.png',
+      alt: 'logo',
+      width: '65',
+      height: '65',
+    },
+    {
+      src: '/images/logo/pikr unila.jpeg',
+      alt: 'logo',
+      width: '65',
+      height: '65',
+    },
+    {
+      src: '/images/logo/Logo Rakanila.png',
+      alt: 'logo',
+      width: '65',
+      height: '65',
+    },
+    {
+      src: '/images/logo/Logo Kejar Mimpi Lampung.jpg',
+      alt: 'logo',
+      width: '65',
+      height: '65',
+    },
+    {
+      src: '/images/logo/Logo Himafi-1.png',
+      alt: 'logo',
+      width: '65',
+      height: '65',
+    },
+    {
+      src: '/images/logo/HIMATIKA.PNG',
+      alt: 'logo',
+      width: '75',
+      height: '75',
+    },
+    {
+      src: '/images/logo/Himatro.png',
+      alt: 'logo',
+      width: '75',
+      height: '75',
+    },
+    {
+      src: '/images/logo/logo mpl.png',
+      alt: 'logo',
+      width: '120',
+      height: '120',
+    },
+  ]
+
+  useEffect(() => {
+    const clonedSponsors = [
+      ...originalSponsors,
+      ...originalSponsors,
+      ...originalSponsors,
+    ]
+
+    setSponsors(clonedSponsors)
+  }, [])
+
+  useEffect(() => {
+    const clonedMedpart = [...originalMedpart, ...originalMedpart]
+
+    setMedpart(clonedMedpart)
+  }, [])
+
   return (
     <main className="dark:bg-black">
       <div className="">
@@ -252,48 +405,32 @@ export default function Home() {
           </h4>
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
-          <div className="group mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="flex items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
-              <li>
-                <Image
-                  src="/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg"
-                  alt="logo"
-                  width="90"
-                  height="90"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Khazzanah Tour & Travel Cab. Lampung.png"
-                  alt="logo"
-                  width="70"
-                  height="70"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/PT. Indonesia Teknologi.png"
-                  alt="logo"
-                  width="70"
-                  height="70"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Eleos.jpeg"
-                  alt="logo"
-                  width="70"
-                  height="70"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/KING.png"
-                  alt="logo"
-                  width="70"
-                  height="70"
-                />
-              </li>
+          <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap justify-center overflow-hidden lg:mt-10 dark:bg-white">
+            <ul className="hidden items-center justify-center group-hover:[animation-play-state:paused] lg:flex [&_img]:max-w-none [&_li]:mx-8">
+              {sponsors
+                .slice(0, originalSponsors.length)
+                .map((sponsor, index) => (
+                  <li key={index}>
+                    <Image
+                      src={sponsor.src}
+                      alt={sponsor.alt}
+                      width={parseInt(sponsor.width)}
+                      height={parseInt(sponsor.height)}
+                    />
+                  </li>
+                ))}
+            </ul>
+            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start lg:hidden [&_img]:max-w-none [&_li]:mx-8">
+              {sponsors.map((sponsor, index) => (
+                <li key={index}>
+                  <Image
+                    src={sponsor.src}
+                    alt={sponsor.alt}
+                    width={parseInt(sponsor.width)}
+                    height={parseInt(sponsor.height)}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -303,252 +440,17 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
-              <li>
-                <Image
-                  src="/images/logo/infolomba.PNG"
-                  alt="logo"
-                  width="90"
-                  height="90"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo-seputar.infoid.jpg"
-                  alt="logo"
-                  width="100"
-                  height="100"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logo hima IF.png"
-                  alt="logo"
-                  width="50"
-                  height="50"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Kawal Event.jpg"
-                  alt="logo"
-                  width="100"
-                  height="100"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png"
-                  alt="logo"
-                  width="150"
-                  height="150"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/LOGO TEKNOKRA.png"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logolombasma2.png"
-                  alt="logo"
-                  width="150"
-                  height="150"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Olimpiade Update.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/pikr unila.jpeg"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Rakanila.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Kejar Mimpi Lampung.jpg"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Himafi-1.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/HIMATIKA.PNG"
-                  alt="logo"
-                  width="75"
-                  height="75"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Himatro.png"
-                  alt="logo"
-                  width="75"
-                  height="75"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logo mpl.png"
-                  alt="logo"
-                  width="120"
-                  height="120"
-                />
-              </li>
-            </ul>
-            <ul
-              className="flex animate-loop-scroll items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8"
-              aria-hidden="true"
-            >
-              <li>
-                <Image
-                  src="/images/logo/infolomba.PNG"
-                  alt="logo"
-                  width="90"
-                  height="90"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo-seputar.infoid.jpg"
-                  alt="logo"
-                  width="100"
-                  height="100"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logo hima IF.png"
-                  alt="logo"
-                  width="50"
-                  height="50"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Kawal Event.jpg"
-                  alt="logo"
-                  width="100"
-                  height="100"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png"
-                  alt="logo"
-                  width="150"
-                  height="150"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/LOGO TEKNOKRA.png"
-                  alt="logo"
-                  width="240"
-                  height="240"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logolombasma2.png"
-                  alt="logo"
-                  width="150"
-                  height="150"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Olimpiade Update.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/pikr unila.jpeg"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Rakanila.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Kejar Mimpi Lampung.jpg"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Logo Himafi-1.png"
-                  alt="logo"
-                  width="65"
-                  height="65"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/HIMATIKA.PNG"
-                  alt="logo"
-                  width="75"
-                  height="75"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/Himatro.png"
-                  alt="logo"
-                  width="75"
-                  height="75"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/logo/logo mpl.png"
-                  alt="logo"
-                  width="120"
-                  height="120"
-                />
-              </li>
+            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+              {medpart.map((medpart, index) => (
+                <li key={index}>
+                  <Image
+                    src={medpart.src}
+                    alt={medpart.alt}
+                    width={parseInt(medpart.width)}
+                    height={parseInt(medpart.height)}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
