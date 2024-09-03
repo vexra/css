@@ -64,18 +64,6 @@ export default async function registerFutsal(
     phoneMember9,
     birthdateMember9,
     studentCardMember9,
-    fullnameMember10,
-    phoneMember10,
-    birthdateMember10,
-    studentCardMember10,
-    fullnameMember11,
-    phoneMember11,
-    birthdateMember11,
-    studentCardMember11,
-    fullnameMember12,
-    phoneMember12,
-    birthdateMember12,
-    studentCardMember12,
     fullnameAssistant1,
     phoneAssistant1,
     fullnameAssistant2,
@@ -167,30 +155,6 @@ export default async function registerFutsal(
     },
   )
 
-  const studentCardMember10BlobPromise = put(
-    studentCardMember10.name,
-    studentCardMember10,
-    {
-      access: 'public',
-    },
-  )
-
-  const studentCardMember11BlobPromise = put(
-    studentCardMember11.name,
-    studentCardMember11,
-    {
-      access: 'public',
-    },
-  )
-
-  const studentCardMember12BlobPromise = put(
-    studentCardMember12.name,
-    studentCardMember12,
-    {
-      access: 'public',
-    },
-  )
-
   const paymentProofBlobPromise = put(paymentProof.name, paymentProof, {
     access: 'public',
   })
@@ -206,9 +170,6 @@ export default async function registerFutsal(
     studentCardMember7BlobPromise,
     studentCardMember8BlobPromise,
     studentCardMember9BlobPromise,
-    studentCardMember10BlobPromise,
-    studentCardMember11BlobPromise,
-    studentCardMember12BlobPromise,
     paymentProofBlobPromise,
   ])
 
@@ -255,18 +216,6 @@ export default async function registerFutsal(
       phoneMember9,
       birthdateMember9,
       studentCardMember9: result[9].downloadUrl,
-      fullnameMember10,
-      phoneMember10,
-      birthdateMember10,
-      studentCardMember10: result[10].downloadUrl,
-      fullnameMember11,
-      phoneMember11,
-      birthdateMember11,
-      studentCardMember11: result[11].downloadUrl,
-      fullnameMember12,
-      phoneMember12,
-      birthdateMember12,
-      studentCardMember12: result[12].downloadUrl,
       fullnameAssistant1,
       phoneAssistant1,
       fullnameAssistant2,
@@ -274,7 +223,7 @@ export default async function registerFutsal(
       email,
       institution,
       teamName,
-      paymentProof: result[13].downloadUrl,
+      paymentProof: result[10].downloadUrl,
       accountHolderName,
     },
   })

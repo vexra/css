@@ -163,21 +163,6 @@ model Futsal {
   birthdateMember9   DateTime
   studentCardMember9 String
 
-  fullnameMember10    String
-  phoneMember10       String
-  birthdateMember10   DateTime
-  studentCardMember10 String
-
-  fullnameMember11    String
-  phoneMember11       String
-  birthdateMember11   DateTime
-  studentCardMember11 String
-
-  fullnameMember12    String
-  phoneMember12       String
-  birthdateMember12   DateTime
-  studentCardMember12 String
-
   fullnameAssistant1 String
   phoneAssistant1    String
 
