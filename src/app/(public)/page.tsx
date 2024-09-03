@@ -158,13 +158,13 @@ export default function Home() {
     ]
 
     setSponsors(clonedSponsors)
-  }, [])
+  }, [originalSponsors])
 
   useEffect(() => {
     const clonedMedpart = [...originalMedpart, ...originalMedpart]
 
     setMedpart(clonedMedpart)
-  }, [])
+  }, [originalMedpart])
 
   return (
     <main className="dark:bg-black">
