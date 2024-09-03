@@ -1409,6 +1409,28 @@ export default function FutsalRegistrationForm() {
             </p>
           ))}
         </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="institution"
+          >
+            Nama Institusi
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
+            id="institution"
+            type="text"
+            name="institution"
+            placeholder="Nama institusi"
+            required
+          />
+          {state?.errors.institution?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
       </fieldset>
       {/* Profile Tim End */}
 
