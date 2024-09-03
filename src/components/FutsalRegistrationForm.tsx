@@ -1265,6 +1265,198 @@ export default function FutsalRegistrationForm() {
       </fieldset>
       {/* Profile Anggota 10 End */}
 
+      {/* Profile Anggota 11 Start */}
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 11
+        </legend>
+        <div className="mt-2">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="fullnameMember11"
+          >
+            Nama Lengkap
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
+            id="fullnameMember11"
+            type="text"
+            name="fullnameMember11"
+            placeholder="Nama anggota 11"
+            required
+          />
+          {state?.errors.fullnameMember11?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="phoneMember11"
+          >
+            No. Telpon
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
+            id="phoneMember11"
+            type="text"
+            name="phoneMember11"
+            placeholder="Nomor telepon anggota 11"
+            required
+          />
+          {state?.errors.phoneMember11?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="birthdateMember11"
+          >
+            Tanggal Lahir
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
+            id="birthdateMember11"
+            type="date"
+            name="birthdateMember11"
+            required
+          />
+          {state?.errors.birthdateMember11?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="flex flex-row items-center gap-2 font-semibold text-white"
+            htmlFor="studentCardMember11"
+          >
+            Kartu Pelajar
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
+            id="studentCardMember11"
+            type="file"
+            accept="image/*"
+            name="studentCardMember11"
+            onChange={handleFileChange}
+            required
+          />
+          {state?.errors.studentCardMember11?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+      </fieldset>
+      {/* Profile Anggota 11 End */}
+
+      {/* Profile Anggota 12 Start */}
+      <fieldset className="mt-8">
+        <legend className="text-3xl font-semibold text-white">
+          Profil Anggota 12
+        </legend>
+        <div className="mt-2">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="fullnameMember12"
+          >
+            Nama Lengkap
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
+            id="fullnameMember12"
+            type="text"
+            name="fullnameMember12"
+            placeholder="Nama anggota 12"
+            required
+          />
+          {state?.errors.fullnameMember12?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="phoneMember12"
+          >
+            No. Telpon
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white placeholder-white/70 shadow-custom outline-none"
+            id="phoneMember12"
+            type="text"
+            name="phoneMember12"
+            placeholder="Nomor telepon anggota 12"
+            required
+          />
+          {state?.errors.phoneMember12?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="block font-semibold text-white"
+            htmlFor="birthdateMember12"
+          >
+            Tanggal Lahir
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
+            id="birthdateMember12"
+            type="date"
+            name="birthdateMember12"
+            required
+          />
+          {state?.errors.birthdateMember12?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label
+            className="flex flex-row items-center gap-2 font-semibold text-white"
+            htmlFor="studentCardMember12"
+          >
+            Kartu Pelajar
+            <small className="font-normal text-slate-300">Max 1 Mb</small>
+          </label>
+          <input
+            className="mt-1 w-full rounded-lg bg-[#D9D9D933] px-2 py-2 text-white shadow-custom outline-none"
+            id="studentCardMember12"
+            type="file"
+            accept="image/*"
+            name="studentCardMember12"
+            onChange={handleFileChange}
+            required
+          />
+          {state?.errors.studentCardMember12?.map((error) => (
+            <p key={error} aria-live="polite" className="sr-only">
+              {error}
+            </p>
+          ))}
+        </div>
+      </fieldset>
+      {/* Profile Anggota 12 End */}
+
       {/* Profile Pendamping 1 Start */}
       <fieldset className="mt-8">
         <legend className="text-3xl font-semibold text-white">
