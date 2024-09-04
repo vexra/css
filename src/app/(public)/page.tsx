@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   FaArrowRight,
   FaCheckCircle,
@@ -24,131 +24,137 @@ export default function Home() {
     { src: string; alt: string; width: string; height: string }[]
   >([])
 
-  const originalSponsors = [
-    {
-      src: '/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg',
-      alt: 'logo',
-      width: '90',
-      height: '90',
-    },
-    {
-      src: '/images/logo/Khazzanah Tour & Travel Cab. Lampung.png',
-      alt: 'logo',
-      width: '70',
-      height: '70',
-    },
-    {
-      src: '/images/logo/PT. Indonesia Teknologi.png',
-      alt: 'logo',
-      width: '70',
-      height: '70',
-    },
-    {
-      src: '/images/logo/Eleos.jpeg',
-      alt: 'logo',
-      width: '70',
-      height: '70',
-    },
-    {
-      src: '/images/logo/KING.png',
-      alt: 'logo',
-      width: '70',
-      height: '70',
-    },
-  ]
+  const originalSponsors = useMemo(
+    () => [
+      {
+        src: '/images/logo/PT. EPRAS JAYA MURNI PERKASA.jpeg',
+        alt: 'logo',
+        width: '90',
+        height: '90',
+      },
+      {
+        src: '/images/logo/Khazzanah Tour & Travel Cab. Lampung.png',
+        alt: 'logo',
+        width: '70',
+        height: '70',
+      },
+      {
+        src: '/images/logo/PT. Indonesia Teknologi.png',
+        alt: 'logo',
+        width: '70',
+        height: '70',
+      },
+      {
+        src: '/images/logo/Eleos.jpeg',
+        alt: 'logo',
+        width: '70',
+        height: '70',
+      },
+      {
+        src: '/images/logo/KING.png',
+        alt: 'logo',
+        width: '70',
+        height: '70',
+      },
+    ],
+    [],
+  )
 
-  const originalMedpart = [
-    {
-      src: '/images/logo/infolomba.PNG',
-      alt: 'logo',
-      width: '90',
-      height: '90',
-    },
-    {
-      src: '/images/logo/Logo-seputar.infoid.jpg',
-      alt: 'logo',
-      width: '100',
-      height: '100',
-    },
-    {
-      src: '/images/logo/logo hima IF.png',
-      alt: 'logo',
-      width: '50',
-      height: '50',
-    },
-    {
-      src: '/images/logo/Logo Kawal Event.jpg',
-      alt: 'logo',
-      width: '100',
-      height: '100',
-    },
-    {
-      src: '/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png',
-      alt: 'logo',
-      width: '150',
-      height: '150',
-    },
-    {
-      src: '/images/logo/LOGO TEKNOKRA.png',
-      alt: 'logo',
-      width: '240',
-      height: '240',
-    },
-    {
-      src: '/images/logo/logolombasma2.png',
-      alt: 'logo',
-      width: '150',
-      height: '150',
-    },
-    {
-      src: '/images/logo/Olimpiade Update.png',
-      alt: 'logo',
-      width: '65',
-      height: '65',
-    },
-    {
-      src: '/images/logo/pikr unila.jpeg',
-      alt: 'logo',
-      width: '65',
-      height: '65',
-    },
-    {
-      src: '/images/logo/Logo Rakanila.png',
-      alt: 'logo',
-      width: '65',
-      height: '65',
-    },
-    {
-      src: '/images/logo/Logo Kejar Mimpi Lampung.jpg',
-      alt: 'logo',
-      width: '65',
-      height: '65',
-    },
-    {
-      src: '/images/logo/Logo Himafi-1.png',
-      alt: 'logo',
-      width: '65',
-      height: '65',
-    },
-    {
-      src: '/images/logo/HIMATIKA.PNG',
-      alt: 'logo',
-      width: '75',
-      height: '75',
-    },
-    {
-      src: '/images/logo/Himatro.png',
-      alt: 'logo',
-      width: '75',
-      height: '75',
-    },
-    {
-      src: '/images/logo/logo mpl.png',
-      alt: 'logo',
-      width: '120',
-      height: '120',
-    },
-  ]
+  const originalMedpart = useMemo(
+    () => [
+      {
+        src: '/images/logo/infolomba.PNG',
+        alt: 'logo',
+        width: '90',
+        height: '90',
+      },
+      {
+        src: '/images/logo/Logo-seputar.infoid.jpg',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
+      {
+        src: '/images/logo/logo hima IF.png',
+        alt: 'logo',
+        width: '50',
+        height: '50',
+      },
+      {
+        src: '/images/logo/Logo Kawal Event.jpg',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
+      {
+        src: '/images/logo/LOGO PRO 2 BDL FULL - WIDE CONFIGURATION - SEMENTARA.png',
+        alt: 'logo',
+        width: '150',
+        height: '150',
+      },
+      {
+        src: '/images/logo/LOGO TEKNOKRA.png',
+        alt: 'logo',
+        width: '240',
+        height: '240',
+      },
+      {
+        src: '/images/logo/logolombasma2.png',
+        alt: 'logo',
+        width: '150',
+        height: '150',
+      },
+      {
+        src: '/images/logo/Olimpiade Update.png',
+        alt: 'logo',
+        width: '65',
+        height: '65',
+      },
+      {
+        src: '/images/logo/pikr unila.jpeg',
+        alt: 'logo',
+        width: '65',
+        height: '65',
+      },
+      {
+        src: '/images/logo/Logo Rakanila.png',
+        alt: 'logo',
+        width: '65',
+        height: '65',
+      },
+      {
+        src: '/images/logo/Logo Kejar Mimpi Lampung.jpg',
+        alt: 'logo',
+        width: '65',
+        height: '65',
+      },
+      {
+        src: '/images/logo/Logo Himafi-1.png',
+        alt: 'logo',
+        width: '65',
+        height: '65',
+      },
+      {
+        src: '/images/logo/HIMATIKA.PNG',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/Himatro.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/logo mpl.png',
+        alt: 'logo',
+        width: '120',
+        height: '120',
+      },
+    ],
+    [],
+  )
 
   useEffect(() => {
     const clonedSponsors = [
@@ -156,13 +162,11 @@ export default function Home() {
       ...originalSponsors,
       ...originalSponsors,
     ]
-
     setSponsors(clonedSponsors)
   }, [originalSponsors])
 
   useEffect(() => {
     const clonedMedpart = [...originalMedpart, ...originalMedpart]
-
     setMedpart(clonedMedpart)
   }, [originalMedpart])
 
