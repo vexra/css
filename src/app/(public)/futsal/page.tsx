@@ -49,6 +49,15 @@ export default function Futsal() {
           <li className="mt-2 text-base text-zinc-200">
             Peserta menyerahkan pas foto 2x3 sebanyak 2 lembar.
           </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Membawa surat rekomendasi sekolah dengan cap basah dan tanda tangan
+            dari sekolah
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Mengisi surat pertanggungjawaban dan membawa materai sebesar 10000
+          </li>
         </ol>
       </section>
 
@@ -104,7 +113,7 @@ export default function Futsal() {
         </ul>
 
         <p className="mt-5 text-base text-zinc-200">
-          Biaya pendaftaran Futsal sebesar Rp. 350.000/team
+          Biaya pendaftaran Futsal sebesar Rp. 250.000/team
         </p>
 
         <p className="mt-5 text-base text-zinc-200">
