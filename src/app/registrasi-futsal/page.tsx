@@ -7,13 +7,10 @@ export default function RegistrasiFutsal() {
   noStore()
 
   const now = new Date()
-  const startDate1 = new Date('2024-08-15')
-  const endDate1 = new Date('2024-09-10')
-  const startDate2 = new Date('2024-09-11')
-  const endDate2 = new Date('2024-10-10')
+  const startDate = new Date('2024-08-15')
+  const endDate = new Date('2024-10-10')
 
-  const isRegistrationOpen =
-    isInRange(now, startDate1, endDate1) || isInRange(now, startDate2, endDate2)
+  const isRegistrationOpen = isInRange(now, startDate, endDate)
 
   return (
     <main className="bg-gradient-css min-h-screen font-sans">
