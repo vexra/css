@@ -104,18 +104,8 @@ export default function Futsal() {
         </ul>
 
         <p className="mt-5 text-base text-zinc-200">
-          Biaya pendaftaran Futsal sebesar
+          Biaya pendaftaran Futsal sebesar Rp. 350.000/team
         </p>
-
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-zinc-200">
-            Gelombang I : Rp. 350.000/team
-          </li>
-
-          <li className="mt-2 text-base text-zinc-200">
-            Gelombang II : Rp. 375.000/team
-          </li>
-        </ul>
 
         <p className="mt-5 text-base text-zinc-200">
           Biaya pendaftaran harus diberikan sebelum pendaftaran ditutup dengan
