@@ -7,13 +7,10 @@ export default function RegistrasiML() {
   noStore()
 
   const now = new Date()
-  const startDate1 = new Date('2024-09-9')
-  const endDate1 = new Date('2024-09-22')
-  const startDate2 = new Date('2024-09-23')
-  const endDate2 = new Date('2024-10-11')
+  const startDate = new Date('2024-09-9')
+  const endDate = new Date('2024-10-11')
 
-  const isRegistrationOpen =
-    isInRange(now, startDate1, endDate1) || isInRange(now, startDate2, endDate2)
+  const isRegistrationOpen = isInRange(now, startDate, endDate)
 
   return (
     <main className="bg-gradient-css min-h-screen font-sans">
