@@ -166,3 +166,5 @@ A list of the original co-authors of Computer Science Showdown webapp that helpe
 - [@vexra](https://github.com/vexra)
 - [@kiraware](https://github.com/kiraware)
 - [@dafahan](https://github.com/dafahan)
+- [@rifqee23](https://github.com/rifqee23)
+- [@Arkaan16](https://github.com/Arkaan16)
