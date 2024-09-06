@@ -166,11 +166,11 @@ export default function Ml() {
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang I : Rp. Rp100.000 per Peserta
+            Gelombang I : Sudah Tutup
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang II : Rp. Rp120.000 per Peserta
+            Gelombang II : Rp. Rp120.000 / Peserta
           </li>
         </ul>
 

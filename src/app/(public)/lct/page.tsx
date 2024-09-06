@@ -113,7 +113,7 @@ export default function Ml() {
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang I : Rp. 155.000/tim (untuk 7 slot)
+            Gelombang I : Sudah Tutup
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
