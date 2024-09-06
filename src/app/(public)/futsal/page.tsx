@@ -104,7 +104,7 @@ export default function Futsal() {
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Technical Meeting : 17 Oktober 2023
+            Technical Meeting : 11 Oktober 2023
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
