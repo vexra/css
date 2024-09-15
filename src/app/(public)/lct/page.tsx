@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Ml() {
@@ -126,11 +127,12 @@ export default function Ml() {
           transfer melalui :
         </p>
 
-        <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
-          <li className="mt-2 text-base text-zinc-200">
-            Bank Lampung 3800301563350 a.n. Himakom FMIPA UNILA
-          </li>
-        </ul>
+        <Image
+          src="/images/qrispembayaran.jpg"
+          width={200}
+          height={200}
+          alt="whatsapp"
+        />
 
         <div className="mt-2 flex items-center gap-x-2">
           <p className="text-base text-zinc-200">Lihat Poster panduan</p>
