@@ -102,7 +102,7 @@ export default function Ml() {
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Penyisihan : 15 Oktober 2024
+            Penyisihan (Online) : 15 Oktober 2024
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
