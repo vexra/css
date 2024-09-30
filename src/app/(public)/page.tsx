@@ -56,6 +56,12 @@ export default function Home() {
         width: '70',
         height: '70',
       },
+      {
+        src: '/images/logo/Logo-Mayora-1.png',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
     ],
     [],
   )
@@ -152,21 +158,88 @@ export default function Home() {
         width: '120',
         height: '120',
       },
+      {
+        src: '/images/logo/FPL.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/GPL.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/HMJ TEKKOM POLSRI.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/Edaran event.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/gudang lomba.jpg',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/info lomba sch.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/info lomba dan beasiswa.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/LOGO ULE.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/Logo ESo.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/LOGO HMPS - Himatif Encoder.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
+      {
+        src: '/images/logo/logo HIMATUR.png',
+        alt: 'logo',
+        width: '75',
+        height: '75',
+      },
     ],
     [],
   )
 
   useEffect(() => {
-    const clonedSponsors = [
-      ...originalSponsors,
-      ...originalSponsors,
-      ...originalSponsors,
-    ]
-    setSponsors(clonedSponsors)
+    const clonedSponsors = Object.values(originalSponsors)
+    setSponsors([...clonedSponsors, ...clonedSponsors, ...clonedSponsors])
   }, [originalSponsors])
 
   useEffect(() => {
-    const clonedMedpart = [...originalMedpart, ...originalMedpart]
+    const clonedMedpart = []
+
+    for (let i = 0; i < 100; i++) {
+      clonedMedpart.push(...Object.values(originalMedpart))
+    }
+
     setMedpart(clonedMedpart)
   }, [originalMedpart])
 
