@@ -62,6 +62,48 @@ export default function Home() {
         width: '100',
         height: '100',
       },
+      {
+        src: '/images/logo/BLACKROSE.jpg',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
+      {
+        src: '/images/logo/DMERMAID.jpg',
+        alt: 'logo',
+        width: '80',
+        height: '80',
+      },
+      {
+        src: '/images/logo/Kencana Budaya.jpg',
+        alt: 'logo',
+        width: '80',
+        height: '80',
+      },
+      {
+        src: '/images/logo/TEH-PUCUK-HARUM.png',
+        alt: 'logo',
+        width: '70',
+        height: '70',
+      },
+      {
+        src: '/images/logo/Yamaha.png',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
+      {
+        src: '/images/logo/Yuri Florist.JPG',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
+      {
+        src: '/images/logo/great giant pineapple_.jpg',
+        alt: 'logo',
+        width: '100',
+        height: '100',
+      },
     ],
     [],
   )
@@ -229,8 +271,13 @@ export default function Home() {
   )
 
   useEffect(() => {
-    const clonedSponsors = Object.values(originalSponsors)
-    setSponsors([...clonedSponsors, ...clonedSponsors, ...clonedSponsors])
+    const clonedSponsor = []
+
+    for (let i = 0; i < 100; i++) {
+      clonedSponsor.push(...Object.values(originalSponsors))
+    }
+
+    setSponsors(clonedSponsor)
   }, [originalSponsors])
 
   useEffect(() => {
@@ -483,21 +530,7 @@ export default function Home() {
           <div className="mx-auto mt-2 w-20 border border-t-4 border-[#3A0CA3]"></div>
 
           <div className="group mb-10 mt-16 inline-flex h-20 w-full flex-nowrap justify-center overflow-hidden lg:mt-10 dark:bg-white">
-            <ul className="hidden items-center justify-center group-hover:[animation-play-state:paused] lg:flex [&_img]:max-w-none [&_li]:mx-8">
-              {sponsors
-                .slice(0, originalSponsors.length)
-                .map((sponsor, index) => (
-                  <li key={index}>
-                    <Image
-                      src={sponsor.src}
-                      alt={sponsor.alt}
-                      width={parseInt(sponsor.width)}
-                      height={parseInt(sponsor.height)}
-                    />
-                  </li>
-                ))}
-            </ul>
-            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start lg:hidden [&_img]:max-w-none [&_li]:mx-8">
+            <ul className="flex animate-loop-scroll-50 items-center justify-center group-hover:[animation-play-state:paused] md:justify-start [&_img]:max-w-none [&_li]:mx-8">
               {sponsors.map((sponsor, index) => (
                 <li key={index}>
                   <Image
