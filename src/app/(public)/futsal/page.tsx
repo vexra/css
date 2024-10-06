@@ -159,7 +159,8 @@ export default function Futsal() {
 
       <section className="mt-10 text-center">
         <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-3xl font-bold text-transparent text-zinc-50">
-          Pendaftaran Futsal Silahkan Langsung Hubungi Contact Person yang Tertera, Terimakasih.
+          Pendaftaran Futsal Silahkan Langsung Hubungi Contact Person yang
+          Tertera! Terimakasih.
         </h1>
       </section>
     </main>
