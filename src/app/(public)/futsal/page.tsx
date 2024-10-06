@@ -157,12 +157,12 @@ export default function Futsal() {
         </ul>
       </section>
 
-      <Link
-        href="/registrasi-futsal"
-        className="mx-auto mt-10 block w-fit rounded-lg bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] px-6 py-4 text-2xl font-semibold text-zinc-50 hover:from-[#7209B7] hover:to-[#ff0b99] sm:px-8 md:px-16 md:text-4xl"
-      >
-        Daftar Sekarang
-      </Link>
+      <section className="mt-10 text-center">
+        <h1 className="mt-10 bg-gradient-heading bg-clip-text py-2 text-3xl font-bold text-transparent text-zinc-50">
+          Pendaftaran Futsal Silahkan Langsung Hubungi Contact Person yang
+          Tertera! Terimakasih.
+        </h1>
+      </section>
     </main>
   )
 }
