@@ -49,7 +49,7 @@ export default function Ml() {
 
         <p className="mt-2 text-base text-zinc-200">
           Ketentuan umum merupakan ketentuan yang berlaku untuk kategori
-          perlombaan Mobile Legends
+          perlombaan Competitive Programming Competition
         </p>
 
         <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
@@ -133,7 +133,7 @@ export default function Ml() {
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang II : 8 September - 8 Oktober 2024
+            Gelombang II : 8 September - 11 Oktober 2024
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
