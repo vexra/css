@@ -96,7 +96,7 @@ export default function Ml() {
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
-            Gelombang II : 8 September - 8 Oktober 2024
+            Gelombang II : 8 September - 11 Oktober 2024
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
@@ -140,7 +140,7 @@ export default function Ml() {
           <Link
             className="bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] bg-clip-text text-base font-semibold text-transparent hover:from-[#9B51E0] hover:to-[#020202]"
             href={
-              'https://drive.google.com/file/d/1MkT2moWj70XotEQ4GBYOezJOCuBUpCFp/view?usp=drivesdk'
+              'https://drive.google.com/file/d/1mfgLWpR3MumLxv9atcH91JKoeLCkNCNI/view?usp=drivesdk'
             }
             target="_blank"
           >

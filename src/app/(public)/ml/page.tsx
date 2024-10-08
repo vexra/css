@@ -63,6 +63,62 @@ export default function Ml() {
       </section>
 
       <section className="mt-10">
+        <h2 className="text-4xl font-bold text-zinc-50">Alur Lomba</h2>
+
+        <p className="mt-2 text-base text-zinc-200">A. Babak Penyisihan</p>
+
+        <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
+          <li className="mt-2 text-base text-zinc-200">
+            Dilaksanakan secara daring (online).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Mode pertandingan draft pick.
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Pertandingan kualifikasi (BO3).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Peserta wajib melakukan pertandingan sesuai dengan jadwal yang
+            diberikan panitia.
+          </li>
+        </ol>
+
+        <p className="mt-4 text-base text-zinc-200">
+          B. Babak semifinal dan final
+        </p>
+
+        <ol className="mt-2 list-decimal px-6 marker:font-bold marker:text-[#3A0CA3]">
+          <li className="mt-2 text-base text-zinc-200">
+            Dilaksanakan secara luring (offline).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Mode pertandingan draft pick.
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Pertandingan semifinal (BO3).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Perebutan juara 3 (BO3).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Final (BO5 + Room Tournament).
+          </li>
+
+          <li className="mt-2 text-base text-zinc-200">
+            Peserta wajib melakukan pertandingan sesuai dengan jadwal yang
+            diberikan panitia.
+          </li>
+        </ol>
+      </section>
+
+      <section className="mt-10">
         <h2 className="text-4xl font-bold text-zinc-50">Penghargaan</h2>
         <p className="mt-2 text-base text-zinc-200">
           Penghargaan bagi para pemenang Mobile Legend
@@ -132,7 +188,7 @@ export default function Ml() {
           <Link
             className="bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] bg-clip-text text-base font-semibold text-transparent hover:from-[#9B51E0] hover:to-[#020202]"
             href={
-              'https://drive.google.com/file/d/1Op-5hBLGZn59Nq-_XWYTYNLzk-hkCDRj/view?usp=drivesdk'
+              'https://drive.google.com/file/d/1n4MjNeuQDXAx8dEBcB-oXK24PdyCx8MP/view?usp=drivesdk'
             }
             target="_blank"
           >
