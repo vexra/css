@@ -10,7 +10,7 @@ export default function RegistrasiCPC() {
   const startDate1 = new Date('2024-08-01')
   const endDate1 = new Date('2024-08-30')
   const startDate2 = new Date('2024-09-08')
-  const endDate2 = new Date('2024-10-11')
+  const endDate2 = new Date('2024-10-12')
 
   const isRegistrationOpen =
     isInRange(now, startDate1, endDate1) || isInRange(now, startDate2, endDate2)
