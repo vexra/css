@@ -8,7 +8,7 @@ export default function RegistrasiML() {
 
   const now = new Date()
   const startDate = new Date('2024-09-9')
-  const endDate = new Date('2024-10-11')
+  const endDate = new Date('2024-10-14')
 
   const isRegistrationOpen = isInRange(now, startDate, endDate)
 

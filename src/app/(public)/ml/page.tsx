@@ -146,7 +146,7 @@ export default function Ml() {
 
         <ul className="mt-2 list-disc px-6 marker:font-bold marker:text-[#3A0CA3]">
           <li className="mt-2 text-base text-zinc-200">
-            Tanggal Pendaftaran : 9 September - 11 Oktober 2024
+            Tanggal Pendaftaran : 9 September - 14 Oktober 2024
           </li>
 
           <li className="mt-2 text-base text-zinc-200">
@@ -188,7 +188,7 @@ export default function Ml() {
           <Link
             className="bg-gradient-to-r from-[#7209B7] to-[#3A0CA3] bg-clip-text text-base font-semibold text-transparent hover:from-[#9B51E0] hover:to-[#020202]"
             href={
-              'https://drive.google.com/file/d/1n4MjNeuQDXAx8dEBcB-oXK24PdyCx8MP/view?usp=drivesdk'
+              'https://drive.google.com/file/d/1q9_kNy0chnEjk4g3f0XiWWz9mHlMp8TB/view?usp=drivesdk'
             }
             target="_blank"
           >
