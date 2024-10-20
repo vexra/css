@@ -10,64 +10,51 @@ export default function PengumumanLomba() {
         <section className="w-full rounded-lg bg-zinc-50 shadow-lg dark:bg-purple-900">
           <div className="rounded-t-lg bg-purple-100 px-6 py-4 dark:bg-purple-800">
             <h2 className="text-2xl font-bold text-purple-700 md:text-4xl dark:text-zinc-100">
-              Lomba Cepat Tepat
+              Lomba Cepat tepat
             </h2>
           </div>
-
           <div className="p-4 md:p-8">
             <table className="min-w-full table-auto divide-y divide-purple-200">
               <thead className="bg-purple-300 dark:bg-purple-800">
                 <tr className="text-center align-middle dark:text-zinc-100">
                   <th className="px-4 py-2">Juara</th>
                   <th className="px-4 py-2">Sekolah</th>
-                  <th className="px-4 py-2">Nama</th>
+                  <th className="px-4 py-2">Tim</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-purple-200 bg-zinc-50 dark:text-slate-800">
                 <tr>
-                  <td className="text-center align-middle" rowSpan={3}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     1
                   </td>
-                  <td className="text-center align-middle" rowSpan={3}>
-                    ?
+                  <td className="text-center align-middle" rowSpan={1}>
+                    SMAN 10 Bandar Lampung
                   </td>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    ItsclubSmandasa
+                  </td>
                 </tr>
                 <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td className="text-center align-middle" rowSpan={3}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     2
                   </td>
-                  <td className="text-center align-middle" rowSpan={3}>
-                    ?
+                  <td className="text-center align-middle" rowSpan={1}>
+                    SMAN 2 Bandar Lampung
                   </td>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    Babu Bima
+                  </td>
                 </tr>
                 <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td className="text-center align-middle" rowSpan={3}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     3
                   </td>
-                  <td className="text-center align-middle" rowSpan={3}>
-                    ?
+                  <td className="text-center align-middle" rowSpan={1}>
+                    MAN Insan Cendekia Lampung Timur
                   </td>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    Freak Skibidi
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -96,27 +83,33 @@ export default function PengumumanLomba() {
                     1
                   </td>
                   <td className="text-center align-middle" rowSpan={1}>
-                    ?
+                    SMAN 3 Malang
                   </td>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    Rozan Laudzai
+                  </td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     2
                   </td>
                   <td className="text-center align-middle" rowSpan={1}>
-                    ?
+                    MAN 2 Pekanbaru
                   </td>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    Muhammad Hariz Faizullah
+                  </td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     3
                   </td>
                   <td className="text-center align-middle" rowSpan={1}>
-                    ?
+                    MAN 2 Pekanbaru
                   </td>
-                  <td>?</td>
+                  <td className="text-center align-middle" rowSpan={1}>
+                    KADZYA REENASHIRA HERNANDO
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -124,7 +117,7 @@ export default function PengumumanLomba() {
         </section>
 
         {/* Mobile Legend */}
-        <div className="w-full rounded-lg bg-zinc-50 shadow-lg dark:bg-purple-900">
+        <section className="w-full rounded-lg bg-zinc-50 shadow-lg dark:bg-purple-900">
           <div className="rounded-t-lg bg-purple-100 px-6 py-4 dark:bg-purple-800">
             <h2 className="text-2xl font-bold text-purple-700 md:text-4xl dark:text-zinc-100">
               Mobile Legend
@@ -136,98 +129,34 @@ export default function PengumumanLomba() {
                 <tr className="text-center align-middle dark:text-zinc-100">
                   <th className="px-4 py-2">Juara</th>
                   <th className="px-4 py-2">Tim</th>
-                  <th className="px-4 py-2">Nama</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-purple-200 bg-zinc-50 dark:text-slate-800">
                 <tr>
-                  <td className="text-center align-middle" rowSpan={7}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     1
                   </td>
-                  <td className="text-center align-middle" rowSpan={7}>
-                    ?
-                  </td>
-                  <td>?</td>
+                  <td className="text-center">GxG</td>
                 </tr>
                 <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td className="text-center align-middle" rowSpan={7}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     2
                   </td>
-                  <td className="text-center align-middle" rowSpan={7}>
-                    ?
-                  </td>
-                  <td>?</td>
+                  <td className="text-center">xxknjt</td>
                 </tr>
                 <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td className="text-center align-middle" rowSpan={7}>
+                  <td className="text-center align-middle" rowSpan={1}>
                     3
                   </td>
-                  <td className="text-center align-middle" rowSpan={7}>
-                    ?
-                  </td>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
-                </tr>
-                <tr>
-                  <td>?</td>
+                  <td className="text-center">Major Mois</td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
 
         {/* Futsal */}
-        <div className="w-full rounded-lg bg-zinc-50 shadow-lg dark:bg-purple-900">
+        <section className="w-full rounded-lg bg-zinc-50 shadow-lg dark:bg-purple-900">
           <div className="rounded-t-lg bg-purple-100 px-6 py-4 dark:bg-purple-800">
             <h2 className="text-2xl font-bold text-purple-700 md:text-4xl dark:text-zinc-100">
               Futsal
@@ -238,7 +167,7 @@ export default function PengumumanLomba() {
               <thead className="bg-purple-300 dark:bg-purple-800">
                 <tr className="text-center align-middle dark:text-zinc-100">
                   <th className="px-4 py-2">Juara</th>
-                  <th className="px-4 py-2">Nama</th>
+                  <th className="px-4 py-2">Sekolah</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-purple-200 bg-zinc-50 dark:text-slate-800">
@@ -246,42 +175,42 @@ export default function PengumumanLomba() {
                   <td className="text-center align-middle" rowSpan={1}>
                     1
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">SMK 2 Mei Bandar Lampung</td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     2
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">Smk Trisukses</td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     3
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">Man 1 Bandar Lampung</td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     Best Player
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">Ridho (Smk Trisukses)</td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     Top Scorer
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">Algi (Smk 2 Mei)</td>
                 </tr>
                 <tr>
                   <td className="text-center align-middle" rowSpan={1}>
                     Best Suporter
                   </td>
-                  <td className="text-center">?</td>
+                  <td className="text-center">Man 1 Bandar Lampung</td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
       </section>
     </main>
   )
